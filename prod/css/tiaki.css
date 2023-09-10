@@ -41,7 +41,6 @@ body {
 }
 
 h2,
-h3,
 h4 {
     font-variation-settings: 'wght' 400;
     font-weight: 400;
@@ -64,9 +63,14 @@ h2 {
 h3 {
     font-size: 21px;
     margin: 0 5px;
-    text-align: center;
+    font-variation-settings: 'wght' 600;
+    font-weight: 600;
 }
-
+a {
+    text-decoration: none;
+    color:var(--r);
+    font-weight: 400;
+}
 main {
     display: flex;
     flex-flow: row nowrap;
@@ -79,10 +83,18 @@ body>header {
 }
 
 body>header>nav {
+    display:flex;
     margin: auto;
     position: absolute;
+    justify-content: space-between;
 }
-
+body>header>nav > a{ 
+    display:flex;
+}
+body>header>nav img {
+    /* height:65px; */
+    margin:auto;
+}
 body>header>nav:nth-child(1) {
     width: var(--menuh);
     height: var(--menuv);
@@ -90,6 +102,8 @@ body>header>nav:nth-child(1) {
     left: calc(50% - 33px);
     top: calc(50% - 125px);
     z-index: 20;
+    flex-flow:column nowrap;
+    padding:15px 0;
 }
 
 body>header>nav:nth-child(2) {
@@ -99,6 +113,7 @@ body>header>nav:nth-child(2) {
     left: calc(50% - 125px);
     top: calc(50% - 33px);
     z-index: 19;
+    padding:0 15px;
 }
 
 main>section {
@@ -140,10 +155,13 @@ main>section>footer {
     display: flex;
     flex-flow: row nowrap;
     background-color: var(--clair);
-    width:auto;
+    /* width:auto; */
     height:60px;
+    margin-top:auto;
+    align-items: center;
+    padding-left:15px;
 }
-main>section>footer a {
+main>section>footer > * {
     padding:10px;
     margin:0 5px;
 }
@@ -156,13 +174,13 @@ main>section:nth-child(1) {
 }
 
 main>section:nth-child(1)>header {
-    align-self: flex-end;
+    align-self: flex-start;
     background-color: var(--ro);
     text-align: right;
 }
 
 main>section:nth-child(1)>blockquote {
-    align-self: flex-start;
+    align-self: flex-end;
 }
 main>section:nth-child(1)>article {
     margin-right:200px;
@@ -174,12 +192,12 @@ main>section:nth-child(1) footer {
 main>section:nth-child(2) {}
 
 main>section:nth-child(2)>header {
-    align-self: flex-start;
+    align-self: flex-end;
     background-color: var(--o);
 }
 
 main>section:nth-child(2)>blockquote {
-    align-self: flex-end;
+    align-self: flex-start;
 }
 main>section:nth-child(2)>article {
     margin-left:200px;
