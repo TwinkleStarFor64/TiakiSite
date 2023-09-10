@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600');
+
+:root {
+    /* Variables */
+    --clair: white;
+    --fonce: black;
+    --o: #F28705;
+    --ro: #F22F1D;
+    --r: #D9042B;
+    --v: #270140;
+    --vc: #805E96;
+    --j: #F0C02E;
+    --menuh: 65px;
+    --menuv: 250px;
+    --encarts:40vw;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-variation-settings: 'wght' 400;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background: url('../assets/images/bg.png') no-repeat;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2,
+h3,
+h4 {
+    font-variation-settings: 'wght' 400;
+    font-weight: 400;
+}
+
+h1 {
+    font-variation-settings: 'wght' 400;
+    font-weight: 400;
+    font-size: 32px;
+    margin: 30px 0 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 100;
+    font-variation-settings: 'wght' 100;
+    margin: 10px 0 30px;
+}
+
+h3 {
+    font-size: 21px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+body>header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+body>header>nav {
+    margin: auto;
+    position: absolute;
+}
+
+body>header>nav:nth-child(1) {
+    width: var(--menuh);
+    height: var(--menuv);
+    background-color: var(--v);
+    left: calc(50% - 33px);
+    top: calc(50% - 125px);
+    z-index: 20;
+}
+
+body>header>nav:nth-child(2) {
+    height: var(--menuh);
+    width: var(--menuv);
+    background-color: var(--j);
+    left: calc(50% - 125px);
+    top: calc(50% - 33px);
+    z-index: 19;
+}
+
+main>section {
+    width: 50vw;
+    flex-flow: column nowrap;
+    padding-top: 25px;
+}
+
+footer {
+    display: flex;
+}
+
+main>section>header {
+    width: var(--encarts);
+    margin: 0;
+    color: var(--clair);
+    padding: 0 30px;
+}
+
+main>section>blockquote {
+    background-color: var(--clair);
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    width: var(--encarts);
+}
+
+main>section>blockquote>* {
+    padding: 15px;
+}
+
+main>section>article {
+    overflow-y: auto;
+    background-color: var(--clair);
+    padding:15px;
+}
+
+main>section>footer {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--clair);
+    width:auto;
+    height:60px;
+}
+main>section>footer a {
+    padding:10px;
+    margin:0 5px;
+}
+main>section>footer img {
+    height:40px;
+}
+main>section:nth-child(1) {
+    background: url('../assets/enfant-exercice.jpg') no-repeat;
+    background-size: cover;
+}
+
+main>section:nth-child(1)>header {
+    align-self: flex-end;
+    background-color: var(--ro);
+    text-align: right;
+}
+
+main>section:nth-child(1)>blockquote {
+    align-self: flex-start;
+}
+main>section:nth-child(1)>article {
+    margin-right:200px;
+}
+main>section:nth-child(1) footer {
+    align-self: flex-end;
+}
+
+main>section:nth-child(2) {}
+
+main>section:nth-child(2)>header {
+    align-self: flex-start;
+    background-color: var(--o);
+}
+
+main>section:nth-child(2)>blockquote {
+    align-self: flex-end;
+}
+main>section:nth-child(2)>article {
+    margin-left:200px;
+}
+main>section:nth-child(2) footer {}
+
+section {
+    display: flex;
+}
+
+/* SCROLLBARS */
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    /* background-color: #e4e4e4;
+    border-radius: 100px; */
+    background-color: white;
+    border-left: 1px solid var(--j);
+}
+
+::-webkit-scrollbar-thumb {
+    /* border-radius: 50px; */
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: var(--v);
+}
+
+/* Pour Firefox */
+.scroller {
+    overflow-y: auto;
+    scrollbar-color: rgba(255, 255, 255, .2) var(--v);
+    scrollbar-width: thin;
+}
