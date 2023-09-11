@@ -70,6 +70,10 @@ a {
     text-decoration: none;
     color:var(--r);
     font-weight: 400;
+    transition: all .3s ease;
+}
+a:hover{
+    transform: scale(1.1);
 }
 main {
     display: flex;
@@ -121,8 +125,10 @@ main>section {
     flex-flow: column nowrap;
     padding-top: 25px;
 }
-
-footer {
+body > footer {
+    position: absolute;
+    bottom:20px;
+    left:20px;
     display: flex;
 }
 
@@ -207,7 +213,21 @@ main>section:nth-child(2) footer {}
 section {
     display: flex;
 }
-
+.btn{
+    padding:10px 20px;
+    margin:auto;
+    transition: all .3s ease;
+    color:var(--clair);
+}
+.btn:hover{
+    background-color: var(--r);
+}
+.btn.rougeorange{
+    background-color: var(--ro);
+}
+.btn.orange{
+    background-color: var(--o);
+}
 /* SCROLLBARS */
 ::-webkit-scrollbar {
     width: 14px;
