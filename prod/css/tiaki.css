@@ -269,7 +269,18 @@ section {
 .btn.orange {
     background-color: var(--o);
 }
-
+/** Afficher une lightbox dans le site */
+.lightbox{
+    display:none;
+    width:100vw;
+    height:100vh;
+    background: rgba(255, 255, 255, .6);
+}
+.lightbox > article {
+    display:flex;
+    flex-flow: column nowrap;
+    margin:auto;
+}
 /* SCROLLBARS */
 ::-webkit-scrollbar {
     width: 14px;
