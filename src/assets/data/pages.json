@@ -1,0 +1,53 @@
+[
+  {
+    "id":"twinkle",
+    "header": {
+      "title":"Twinkle Star For 64",
+      "subtitle":"Association au service des aidants",
+      "block":"Rendre POSSIBLE l'INCLUSION SOCIALE des personnes en difficultés, en situation de handicap, de leurs aidants en écoutant leurs BESOINS/ en les formalisant et en construisant ENSEMBLE des SOLUTIONS INNOVANTES et EFFICACES alliant nouvelles technologies et Economie Sociale et Solidaire !",
+      "image":{
+        "url":"assets/images/logos/logo_twinkle.png",
+        "alt":"Logo de l'associaion Twinkle Star for 64"
+      }
+    },
+    "link":{
+      "title":"En savoir plus sur Twinkle Star",
+      "url":"https://www.helloasso.com/associations/twinkle-star-for-64"
+    }
+  },
+  {
+    "id":"tiaki",
+    "header": {
+      "title":"Tiaki",
+      "subtitle":"Application numérique au service des aidants",
+      "block":"Tiaki est un écosystème d’outils numériques au service des aidants de personnes en situation de handicap ou dépendantes. Ils doivent favoriser le suivi quotidien des soins  pour les médecins et les aidants, favoriser leur organisation, permettre de soutenir les aidants moralement, techniquement et dans leurs savoir-faire."
+    },
+    "link":{
+      "title":"Soutenez-nous sur Ulule",
+      "url":"https://fr.ulule.com/twinkle-star-for-64"
+    },
+    "list": [
+      {
+        "title":"Nutrition",
+        "p":[
+          "Préparer des plats, des menus en tenant compte des allergènes, participer à l’identification d’allergies et améliorer ou partager vos menus à des tiers ou la communauté.",
+          "Tiaki fournit des outils pour les aidants pour la nutrition."
+        ]
+      },
+      {
+        "title":"Neuroréhabilitation par la kiné et l’optométrie",
+        "p":[
+          "Des kinésithérapeute et une optométriste réalisent des tutoriels pour vous aider à prodiguer les soins au quotidien, images et vidéos, programmes pour savoir quoi faire chaque jour pour améliorer l’autonomie de la ou des personnes que vous aidez."
+        ]
+      },
+      {
+        "title":"Des outils organisationnels",
+        "p":[
+          "Un journal des soins pour prendre note des évolutions quotidiennes et partager les informations avec le corps médical.",
+          "Un agenda intégré pour ne rien oublier.",
+          "Un dossier de santé avec des photos et vidéos, des notes que vous pourrez partager."
+        ]
+      }
+    ]
+  }
+]

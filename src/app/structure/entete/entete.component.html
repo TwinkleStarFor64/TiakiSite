@@ -1,0 +1,18 @@
+<header>
+  <nav>
+    <a *ngFor="let l of pages.menus.main" [href]="l.url" [title]="l.description" [target]="l.target">
+      <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
+      <span *ngIf="!l.image">{{ l.title }}</span>
+      </a>
+      <!-- <a href="https://alpha.tiaki-app.org" title="Voir le prototype en cours de développement" target="_blank"><img src="assets/images/pictos/app.png" alt="Picto accéder à l'application"></a>
+      <a href="mailto:twinklestarfor64@gmail.com" title="Nous contacter" target="_blank"><img src="assets/images/pictos/mail.png" alt="Picto accéder à l'application"></a> -->
+  </nav>
+  <nav>
+    <a *ngFor="let l of pages.menus.external" [href]="l.url" [title]="l.description" [target]="l.target">
+      <img [src]="l.image" [alt]="l.alt" *ngIf="l.image && l.image.length > 0">
+      <span *ngIf="!l.image">{{ l.title }}</span>
+      </a>
+      <!-- <a href="https://fr.ulule.com/twinkle-star-for-64/" title="Soutenez-nous sur Ulule !!!" target="_blank"><img src="assets/images/logos/logo_ulule.png" alt="Picto accéder à l'application"></a>
+      <a href="https://www.helloasso.com/associations/twinkle-star-for-64" title="Nous avons quelques informaions sur helloasso" target="_blank"><img src="assets/images/logos/logo_helloasso.png" alt="Picto accéder à l'application"></a> -->
+  </nav>
+</header>

@@ -1,1 +1,381 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600');
+
+:root {
+    /* Variables */
+    --clair: white;
+    --fonce: black;
+    --o: #F28705;
+    --ro: #F22F1D;
+    --r: #D9042B;
+    --v: #270140;
+    --vc: #805E96;
+    --j: #F0C02E;
+    --menuh: 65px;
+    --menuv: 250px;
+    --encarts: 40vw;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-variation-settings: 'wght' 400;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    flex-flow: column nowrap;
+    font-weight: 400;
+    background: url('./assets/images/bg.png') no-repeat;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2,
+h4 {
+    font-variation-settings: 'wght' 400;
+    font-weight: 400;
+}
+
+h1 {
+    font-variation-settings: 'wght' 400;
+    font-weight: 400;
+    font-size: 32px;
+    margin: 30px 0 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 100;
+    font-variation-settings: 'wght' 100;
+    margin: 10px 0 30px;
+}
+
+h3 {
+    font-size: 21px;
+    margin: 0 5px;
+    font-variation-settings: 'wght' 600;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--r);
+    font-weight: 400;
+    transition: all .3s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+app-entete>header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    pointer-events: none;
+}
+
+app-entete>header>nav {
+    display: flex;
+    margin: auto;
+    position: absolute;
+    justify-content: space-between;
+    pointer-events: all;
+}
+
+app-entete>header>nav>a {
+    display: flex;
+}
+
+app-entete>header>nav img {
+    /* height:65px; */
+    margin: auto;
+}
+
+app-entete>header>nav:nth-child(1) {
+    width: var(--menuh);
+    height: var(--menuv);
+    background-color: var(--v);
+    left: calc(50% - 33px);
+    top: calc(50% - 125px);
+    z-index: 20;
+    flex-flow: column nowrap;
+    padding: 15px 0;
+}
+
+app-entete>header>nav:nth-child(2) {
+    height: var(--menuh);
+    width: var(--menuv);
+    background-color: var(--j);
+    left: calc(50% - 125px);
+    top: calc(50% - 33px);
+    z-index: 19;
+    padding: 0 15px;
+}
+
+main>section {
+    width: 50vw;
+    flex-flow: column nowrap;
+    padding-top: 25px;
+}
+
+main>section>header {
+    width: var(--encarts);
+    margin: 0;
+    color: var(--clair);
+    padding: 0 30px;
+}
+
+main>section>blockquote {
+    background-color: var(--clair);
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    width: var(--encarts);
+}
+
+main>section>blockquote>* {
+    padding: 15px;
+}
+
+.logo {
+    width: 170px;
+    height: 170px;
+}
+
+main>section>article {
+    overflow-y: auto;
+    background-color: var(--clair);
+    padding: 15px;
+}
+
+main>section>footer {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--clair);
+    height: 60px;
+    margin-top: auto;
+    align-items: center;
+    padding-left: 15px;
+}
+main>section>footer>*,
+main>section>footer>div>* {
+    padding: 10px;
+    margin: 0 5px;
+}
+
+main>section>footer img,
+main>section>footer>div img {
+    height: 40px;
+}
+
+main>section:nth-child(1) {
+    background: url('./assets/enfant-exercice.jpg') no-repeat;
+    background-size: cover;
+}
+
+main>section:nth-child(1)>header {
+    align-self: flex-start;
+    background-color: var(--ro);
+    text-align: right;
+}
+
+main>section:nth-child(1)>blockquote {
+    align-self: flex-end;
+}
+
+main>section:nth-child(1)>article {
+    margin-right: 200px;
+}
+
+main>section:nth-child(1) footer {
+    align-self: flex-end;
+}
+main>section:nth-child(1) footer nav {
+    margin-top: -100px;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 0px;
+}
+main>section:nth-child(2) {}
+
+main>section:nth-child(2)>header {
+    align-self: flex-end;
+    background-color: var(--o);
+}
+
+main>section:nth-child(2)>blockquote {
+    align-self: flex-start;
+}
+
+main>section:nth-child(2)>article {
+    margin-left: 20%;
+}
+
+main>section:nth-child(2) footer {
+    flex-flow: column nowrap;
+}
+
+main>section:nth-child(2) footer div {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--clair);
+    padding:0 10px;
+    align-items: center;
+}
+
+main>section:nth-child(2) footer div:nth-child(1) {
+    display: none;
+}
+
+section {
+    display: flex;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 20px auto;
+    transition: all .3s ease;
+    color: var(--clair);
+}
+
+.btn:hover {
+    background-color: var(--r);
+}
+
+.btn.rougeorange {
+    background-color: var(--ro);
+}
+
+.btn.orange {
+    background-color: var(--o);
+}
+/** Afficher une lightbox dans le site */
+.lightbox{
+    display:none;
+    width:100vw;
+    height:100vh;
+    background: rgba(255, 255, 255, .6);
+}
+.lightbox > article {
+    display:flex;
+    flex-flow: column nowrap;
+    margin:auto;
+}
+/* SCROLLBARS */
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    /* background-color: #e4e4e4;
+    border-radius: 100px; */
+    background-color: white;
+    border-left: 1px solid var(--j);
+}
+
+::-webkit-scrollbar-thumb {
+    /* border-radius: 50px; */
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: var(--v);
+}
+
+/* Pour Firefox */
+.scroller {
+    overflow-y: auto;
+    scrollbar-color: rgba(255, 255, 255, .2) var(--v);
+    scrollbar-width: thin;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 980px) {
+    body {
+        overflow-y: auto;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main>section {
+        width: 100vw;
+    }
+
+    main>section>header {
+        width: 80vw;
+    }
+
+    main>section>blockquote {
+        width: 80vw;
+    }
+
+    body {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    app-entete>header {
+        height: var(--menuh);
+        display: flex;
+        flex-flow: row nowrap;
+        position: relative;
+    }
+
+    app-entete>header>nav {
+        position: static;
+        justify-content: space-around;
+        width: 50vw !important;
+        height: var(--menuh) !important;
+        align-items: center;
+        /* top:0 !important;
+        left:0 !important; */
+    }
+
+    app-entete>header>nav:nth-child(1) {
+        flex-direction: row;
+    }
+
+    main>section>footer,
+    main>section>footer div {
+        width: 100vw;
+    }
+
+    main>section:nth-child(1) footer {
+        display: none;
+    }
+
+    main>section:nth-child(2) footer {
+        margin-top: 50px;
+    }
+
+    main>section:nth-child(2) footer div:nth-child(1) {
+        display: flex;
+    }
+}
+
+@media (max-width: 550px) {
+    main>section>blockquote {
+        width: 100vw;
+    }
+
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PagesService } from './common/services/pages.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TiakiSite';
+  title = 'Tiaki, le numérique pour aider les aidants';
+
+  constructor(public pages:PagesService){
+  }
+
+
 }

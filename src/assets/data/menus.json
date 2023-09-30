@@ -1,0 +1,132 @@
+{
+  "main": [
+    {
+      "title": "Parcourir l'application",
+      "description": "Parcourir le prototype de l'application",
+      "url": "https://alpha.tiaki-app.org",
+      "image": "assets/images/pictos/app.png",
+      "type": "lien",
+      "target": "_blank",
+      "public": true
+    },
+    {
+      "title": "Nous contacter",
+      "description": "Nous contacter",
+      "url": "mailto:com@tiaki-app.org",
+      "image": "assets/images/pictos/mail.png",
+      "type": "email",
+      "public": true
+    }
+  ],
+  "external": [
+    {
+      "title": "Nous soutenir sur Ulule",
+      "description": "Nous soutenir en co-finançant le projet sur Ulule",
+      "url": "https://fr.ulule.com/twinkle-star-for-64/",
+      "image": "assets/images/logos/logo_ulule.png",
+      "type": "lien",
+      "target": "_blank",
+      "public": true
+    },
+    {
+      "title": "Nous avons quelques informaions sur Helloasso",
+      "description": "Nous avons quelques informaions sur Helloasso",
+      "url": "https://www.helloasso.com/associations/twinkle-star-for-64",
+      "image": "assets/images/logos/logo_helloasso.png",
+      "type": "lien",
+      "target": "_blank",
+      "public": true
+    }
+  ],
+  "social": [
+    {
+      "title": "Twinkle Star 64 est sur Facebook",
+      "description": "Twinkle Star 64 est sur Facebook",
+      "url": "https://www.facebook.com/twinklestarfor64/",
+      "image": "assets/images/logos/logo_facebook.png",
+      "type": "lien",
+      "target": "_blank",
+      "public": true
+    },
+    {
+      "title": "Nous sommes aussi sur Linkedin",
+      "description": "Nous sommes aussi sur Linkedin",
+      "url": "https://fr.linkedin.com/company/association-twinkle-star-for-64",
+      "image": "assets/images/logos/logo_linkedin.png",
+      "type": "lien",
+      "target": "_blank",
+      "public": true
+    }
+  ],
+  "foot": [
+    {
+      "title": "Mentions légales",
+      "description": "Mentions légales et données personnelles",
+      "url": "/mentions",
+      "type": "lien",
+      "public": true
+    },
+    {
+      "title": "com|@|tiaki-app.org",
+      "description": "Nous anvoyer un email",
+      "url": "mailto:com@tiaki-app.org",
+      "type": "email",
+      "public": true
+    },
+    {
+      "title": "Nos partenaires > ",
+      "description": "",
+      "url": "",
+      "image": "",
+      "type": "fake",
+      "public": false
+    }
+  ],
+  "partners": [
+    {
+      "title": "STEP",
+      "description": "STEP soutient le projet activement dans l'animation et le développement",
+      "url": "https://step.eco",
+      "image": "assets/images/logos/logo_step.png",
+      "alt":"Logo de la société STEP",
+      "type": "lien",
+      "public": true
+    },
+    {
+      "title": "Cap Gemini",
+      "description": "Cap Gemini nous accompagne par un mécénat de compétences",
+      "url": "https://www.capgemini.com/fr-fr/",
+      "image": "assets/images/logos/logo_capgemini.jpg",
+      "alt":"Logo de la société Cap Gemini",
+      "type": "lien",
+      "public": true
+    },
+    {
+      "title": "Région Nouvelle Aquitaine",
+      "description": "La région Nouvelle Aquitaine nous a octroyé un financement pour l'innovation sociale du projet",
+      "url": "https://www.nouvelle-aquitaine.fr/",
+      "image": "assets/images/logos/logo-naq.svg",
+      "alt":"Logo de la région Nouvelle Aquitaine",
+      "type": "lien",
+      "public": false
+    },
+    {
+      "title": "Danser sous la pluie",
+      "description": "L'association d'aidants nous aide à concevoir l'application et ses contenus",
+      "url": "https://www.helloasso.com/associations/danser-sous-la-pluie",
+      "image": "assets/images/logos/logo_dansesouslapluie.png",
+      "alt":"Logo de l'association Danser sous la pluie",
+      "type": "lien",
+      "public": false
+    },
+    {
+      "title": "exlineo",
+      "description": "Le consultant nous accompagne dans l'ingénierie financière et technique",
+      "url": "https://exlineo.com",
+      "image": "assets/images/logos/logo_exlineo.png",
+      "alt":"Logo de la société exlineo",
+      "type": "lien",
+      "public": false
+    }
+  ]
+}
