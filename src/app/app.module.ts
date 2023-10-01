@@ -14,6 +14,7 @@ import { CandidaterComponent } from './pages/candidater/candidater.component';
 import { PartenairesComponent } from './pages/partenaires/partenaires.component';
 import { NewsletterComponent } from './pages/newsletter/newsletter.component';
 import { ErreurComponent } from './pages/erreur/erreur.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ErreurComponent } from './pages/erreur/erreur.component';
     CandidaterComponent,
     PartenairesComponent,
     NewsletterComponent,
-    ErreurComponent
+    ErreurComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

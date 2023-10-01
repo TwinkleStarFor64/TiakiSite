@@ -1,12 +1,11 @@
 {
   "main": [
     {
-      "title": "Parcourir l'application",
-      "description": "Parcourir le prototype de l'application",
-      "url": "https://alpha.tiaki-app.org",
-      "image": "assets/images/pictos/app.png",
+      "title": "Accueil",
+      "description": "Revenir à l'accueil",
+      "url": "/",
+      "image": "assets/images/pictos/home.png",
       "type": "lien",
-      "target": "_blank",
       "public": true
     },
     {
@@ -22,9 +21,17 @@
       "title": "S'inscrire à la newsletter",
       "description": "Recevoir la newsletter",
       "url": "/newsletter",
-      "image": "assets/images/pictos/mail.png",
+      "image": "assets/images/pictos/bulletin.png",
       "target": "_self",
       "type": "lien",
+      "public": true
+    },{
+      "title": "Parcourir l'application",
+      "description": "Parcourir le prototype de l'application",
+      "url": "https://alpha.tiaki-app.org",
+      "image": "assets/images/pictos/app.png",
+      "type": "lien",
+      "target": "_blank",
       "public": true
     }
   ],
@@ -79,16 +86,15 @@
     {
       "title": "com|@|tiaki-app.org",
       "description": "Nous anvoyer un email",
-      "url": "mailto:com@tiaki-app.org",
+      "url": "/nous-contacter",
       "type": "email",
       "public": true
     },
     {
       "title": "Nos partenaires > ",
-      "description": "",
-      "url": "",
-      "image": "",
-      "type": "fake",
+      "description": "Des infos sur nos partenaires",
+      "url": "/partenaires",
+      "type": "lien",
       "public": false
     }
   ],

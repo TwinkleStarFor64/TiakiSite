@@ -6,13 +6,15 @@ import { CandidaterComponent } from './pages/candidater/candidater.component';
 import { PartenairesComponent } from './pages/partenaires/partenaires.component';
 import { NewsletterComponent } from './pages/newsletter/newsletter.component';
 import { ErreurComponent } from './pages/erreur/erreur.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
-  {path:'', component:AccueilComponent, outlet:'pages'},
-  {path:'mentions', component:MentionsComponent, outlet:'pages'},
+  {path:'', component:AccueilComponent},
+  {path:'mentions', component:MentionsComponent},
   {path:'testeur', component:CandidaterComponent},
   {path:'partenaires', component:PartenairesComponent},
   {path:'newsletter', component:NewsletterComponent},
+  {path:'nous-contacter', component:ContactComponent},
   {path:'**', component:ErreurComponent}
 ];
 

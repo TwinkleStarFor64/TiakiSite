@@ -18,7 +18,7 @@ export class PagesService {
    * @param http HttpClient instance to load data
    */
   constructor(private http:HttpClient) {
-    this.getMenus();
+    this.getPages();
   }
   /** Get list of menus */
   getMenus(){
@@ -27,7 +27,7 @@ export class PagesService {
         this.menus = m;
       },
       error: (e) => console.log(e),
-      complete: () => this.getPages()
+      complete: () => this.getPage('tiaki')
     });
   }
   /** Get list of content in pages */
@@ -35,7 +35,7 @@ export class PagesService {
     this.http.get<Array<PageI>>('assets/data/pages.json').subscribe({
       next: (p) => this.pages = p,
       error: (e) => console.log(e),
-      complete: () => this.getPage()
+      complete: () => this.getMenus()
     });
   }
   /**

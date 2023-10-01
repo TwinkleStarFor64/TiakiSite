@@ -8,10 +8,10 @@ import { PagesService } from 'src/app/common/services/pages.service';
 })
 export class AccueilComponent implements OnInit {
 
-  constructor(public pages:PagesService) { }
+  constructor(public contenu:PagesService) { }
 
   ngOnInit(): void {
-    this.pages.id = 'tiaki';
+    this.contenu.pages.length > 0 ? this.contenu.getPage('tiaki') : this.contenu.id = 'tiaki';
   }
 
 }

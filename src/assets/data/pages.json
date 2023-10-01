@@ -51,6 +51,32 @@
     ]
   },
   {
+    "id":"contact",
+    "header": {
+      "title":"Nous contacter",
+      "subtitle":"Application numérique au service des aidants",
+      "block":"Toute l'équipe est sur le pont jour après jour pour trouver des solutions. N'hésitez pas à nous contacter, nous ferons au mieux pour répondre à vos questions."
+    },
+    "list": [
+      {
+        "title":"Où nous trouver ?",
+        "p":[
+          "Technopole Hélioparc,",
+          "2 avenue Pierre Angot",
+          "64053 PAU Cedex 9",
+          ""
+        ]
+      },
+      {
+        "title":"A distance",
+        "p":[
+          "téléphone : 06 85 39 55 94",
+          "Email : admin@tiaki-app.org"
+        ]
+      }
+    ]
+  },
+  {
     "id":"candidater",
     "header": {
       "title":"Devenir bêta testeur",
@@ -73,5 +99,20 @@
         ]
       }
     ]
+  },
+  {
+    "id":"newsletter",
+    "header": {
+      "title":"Restez connectés",
+      "subtitle":"Inscrivez-vous à la newsletter",
+      "block":"Nous enverrons des nouvelles du projet. Vous pourrez les retrouver sur nos réseaux sociaux ou les recevoir dans votre boîte email en vous inscrivant à notre newsletter."
+    },
+    "list": [
+      {
+        "title":"Remplissez le formulaire ci-dessous pour vous inscrire",
+        "p":[""]
+      }
+    ]
   }
+
 ]

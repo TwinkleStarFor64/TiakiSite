@@ -93,6 +93,7 @@ a:hover {
   width:100px;
   text-align: center;
   margin-left:-25px;
+  pointer-events: none;
 }
 .lien a span.hide{
   display:flex;
@@ -139,10 +140,10 @@ app-entete>header>nav img {
 
 app-entete>header>nav:nth-child(1) {
     width: var(--menuh);
-    height: var(--menuv);
+    height: 300px;
     background-color: var(--v);
     left: calc(50% - 33px);
-    top: calc(50% - 125px);
+    top: calc(50% - 150px);
     z-index: 20;
     flex-flow: column nowrap;
     padding: 15px 0;
@@ -152,7 +153,7 @@ app-entete>header>nav:nth-child(1) span {
 }
 app-entete>header>nav:nth-child(2) {
     height: var(--menuh);
-    width: var(--menuv);
+    width: 250px;
     background-color: var(--j);
     left: calc(50% - 125px);
     top: calc(50% - 33px);
@@ -306,7 +307,7 @@ input{
   transition: all .3s ease;
 }
 input:focus{
-  transform: scale(1.1);
+  font-size:21px;
   box-shadow: 3px 3px 0 var(--vc);
 }
 form > div {
@@ -321,7 +322,6 @@ form > div {
     color: var(--clair);
     border:none;
     cursor: pointer;
-    transition:all .3s ease;
     font-family: 'Raleway', sans-serif;
 }
 .btn.rougeorange {
