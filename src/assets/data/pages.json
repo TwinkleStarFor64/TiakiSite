@@ -49,5 +49,29 @@
         ]
       }
     ]
+  },
+  {
+    "id":"candidater",
+    "header": {
+      "title":"Devenir bêta testeur",
+      "subtitle":"Tiaki se construit avec des aidants",
+      "block":"Le logiciel va être déployé par phases : alpha, bêta puis enfin publique. Elle sera gratuite pour les aidants pour l'essentiel des fonctionnalités. Nous espérons la rendre publique dans le courant de l'année 2015."
+    },
+    "list": [
+      {
+        "title":"Le processus",
+        "p":[
+          "Les tests vont s'appuyer d'abord sur les soutiens sur Ulule. Le financement participatif ouvre des accès anticipés à l'application.",
+          "Petit à petit, c'est accès s'ouvriront au plus grand nombre pour arriver finalement à délivrer l'application à tous les aidants.",
+          "Il vous est aussi possible de vous inscrire à notre newsletter ou sur nos réseaux sociaux pour suivre les actualités du projet et rester informés des dates de mise à disposition."
+        ]
+      },
+      {
+        "title":"Comment candidater ?",
+        "p":[
+          "Remplissez le formulaire ci-dessous. Merci de considérer que ce formulaire comprend des données personnelles. Celles-ci seront utilisées pour les tests et pour des communications si vous l'acceptez. Aucune autre utilisation n'en sera faite."
+        ]
+      }
+    ]
   }
 ]

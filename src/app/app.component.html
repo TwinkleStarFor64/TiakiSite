@@ -16,7 +16,7 @@
     <!-- <article></article> -->
     <footer>
       <nav>
-        <a *ngFor="let l of pages.menus.social" [href]="l.url" [title]="l.description" [target]="l.target">
+        <a *ngFor="let l of pages.menus.social" [href]="l.target && l.target == '_blank' ? l.url : ''"  routerLink="l.target != '_blank' ? l.url : ''" [title]="l.description" [target]="l.target ? l.target : '_self'">
           <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
           <span *ngIf="!l.image">{{ l.title }}</span>
           </a>
@@ -28,32 +28,7 @@
     </footer>
   </section>
   <section>
-    <header>
-      <h1>Tiaki</h1>
-      <h2>Application numérique au service des aidants</h2>
-    </header>
-    <blockquote>
-      <p>Tiaki est un écosystème d’outils numériques au service des aidants de personnes en situation de handicap ou
-        dépendantes. Ils doivent favoriser le suivi quotidien des soins  pour les médecins et les aidants, favoriser
-        leur organisation, permettre de soutenir les aidants moralement, techniquement et dans leurs savoir-faire.</p>
-    </blockquote>
-    <a href="https://fr.ulule.com/twinkle-star-for-64" target="_blank" class="btn orange"
-      title="Soutenez-nous sur Ulule">Soyez parmis les premiers à participer, <strong>soutenez-nous !</strong></a>
-    <article>
-      <h3>Nutrition</h3>
-      <p>Préparer des plats, des menus en tenant compte des allergènes, participer à l’identification d’allergies et
-        améliorer ou partager vos menus à des tiers ou la communauté.</p>
-      <p>Tiaki fournit des outils pour les aidants pour la nutrition.</p>
-      <h3>Neuroréhabilitation par la kiné et l’optométrie</h3>
-      <p>Des kinésithérapeute et une optométriste réalisent des tutoriels pour vous aider à prodiguer les soins au
-        quotidien, images et vidéos, programmes pour savoir quoi faire chaque jour pour améliorer l’autonomie de la ou
-        des personnes que vous aidez.</p>
-      <h3>Des outils organisationnels</h3>
-      <p>Un <strong>journal des soins</strong> pour prendre note des évolutions quotidiennes et partager les
-        informations avec le corps médical.</p>
-      <p>Un <strong>agenda</strong> intégré pour ne rien oublier.</p>
-      <p>Un <strong>dossier de santé</strong> avec des photos et vidéos, des notes que vous pourrez partager.</p>
-    </article>
+    <router-outlet></router-outlet>
     <footer>
       <!-- AFFICHER LES MENUS DE PIED DE PAGE -->
       <div>

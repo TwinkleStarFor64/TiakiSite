@@ -10,11 +10,21 @@
       "public": true
     },
     {
-      "title": "Nous contacter",
-      "description": "Nous contacter",
-      "url": "mailto:com@tiaki-app.org",
+      "title": "Devenir beta testeur",
+      "description": "Participez aux tests dès que l'application sera disponible",
+      "url": "/testeur",
+      "image": "assets/images/pictos/tests.png",
+      "target": "_self",
+      "type": "lien",
+      "public": true
+    },
+    {
+      "title": "S'inscrire à la newsletter",
+      "description": "Recevoir la newsletter",
+      "url": "/newsletter",
       "image": "assets/images/pictos/mail.png",
-      "type": "email",
+      "target": "_self",
+      "type": "lien",
       "public": true
     }
   ],
@@ -29,8 +39,8 @@
       "public": true
     },
     {
-      "title": "Nous avons quelques informaions sur Helloasso",
-      "description": "Nous avons quelques informaions sur Helloasso",
+      "title": "Adhérer",
+      "description": "Adhérer sur Helloasso",
       "url": "https://www.helloasso.com/associations/twinkle-star-for-64",
       "image": "assets/images/logos/logo_helloasso.png",
       "type": "lien",

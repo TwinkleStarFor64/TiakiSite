@@ -1,0 +1,47 @@
+<header>
+  <h1>{{ pages.page.header.title }}</h1>
+  <h2>{{ pages.page.header.subtitle }}</h2>
+</header>
+<blockquote>
+  <p>{{ pages.page.header.block }}</p>
+</blockquote>
+<a [href]="pages.page.link!.url" target="_blank" class="btn orange" [title]="pages.page.link!.title"
+  *ngIf="pages.page.link">{{ pages.page.link!.title }}</a>
+<!-- Article -->
+<article *ngIf="pages.page.article">
+
+</article>
+<!-- Liste de contenus -->
+<article *ngIf="pages.page.list">
+  <div *ngFor="let l of pages.page.list">
+    <h3>{{ l.title }}</h3>
+    <p *ngFor="let p of l.p">{{ p }}</p>
+  </div>
+</article>
+<article>
+  <h3>Proposer votre candidature</h3>
+  <form (submit)="go(f)" #f="ngForm">
+    <label for="nom">Votre nom complet</label>
+    <input name="nom" [(ngModel)]="candidature.nom" required>
+    <label for="email">Un email valide</label>
+    <input name="email" [(ngModel)]="candidature.email" required>
+    <label for="tel">Un téléphone ?</label>
+    <input name="tel" [(ngModel)]="candidature.tel" required>
+    <label for="adresse">Indiquez votre adresse</label>
+    <input name="adresse" [(ngModel)]="candidature.adresse">
+    <label for="codePostal">Code postal</label>
+    <input name="codePostal" [(ngModel)]="candidature.codePostal">
+    <label for="ville">Ville</label>
+    <input name="ville" [(ngModel)]="candidature.ville" required>
+    <label for="nutrition">Êtes-vous intéressé par des outils pour la nutrition ?</label>
+    <input name="nutrition" [(ngModel)]="candidature.nutrition" required>
+    <label for="kine">Êtes-vous intéressé par la kinésithérapie ?</label>
+    <input name="kine" [(ngModel)]="candidature.kine">
+    <label for="opto">Êtes-vous intéressé par l'optométrie ?</label>
+    <input name="opto" [(ngModel)]="candidature.opto" required>
+    <div>
+      <button type="reset" class="btn orange">Annuler</button>
+      <button type="submit" class="btn violet">Envoyer</button>
+    </div>
+  </form>
+</article>

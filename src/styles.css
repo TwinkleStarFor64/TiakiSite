@@ -78,7 +78,32 @@ a {
 a:hover {
     transform: scale(1.1);
 }
-
+/* Liens des menus */
+.lien a {
+  position:relative;
+}
+.lien a:hover{
+  z-index:999;
+}
+.lien a span{
+  display:none;
+  position:absolute;
+  padding:10px 15px;
+  color:var(--clair);
+  width:100px;
+  text-align: center;
+  margin-left:-25px;
+}
+.lien a span.hide{
+  display:flex;
+  opacity:0;
+  margin-top:-20px;
+  transition:all .3s ease;
+}
+.lien a:hover span.hide{
+  opacity:1;
+  margin-top:0;
+}
 main {
     display: flex;
     flex-flow: row nowrap;
@@ -101,11 +126,12 @@ app-entete>header>nav {
     justify-content: space-between;
     pointer-events: all;
 }
-
-app-entete>header>nav>a {
+app-entete>header>nav>span, app-entete>header>nav>a {
     display: flex;
 }
-
+app-entete>header>nav>span>*{
+  margin:auto;
+}
 app-entete>header>nav img {
     /* height:65px; */
     margin: auto;
@@ -121,7 +147,9 @@ app-entete>header>nav:nth-child(1) {
     flex-flow: column nowrap;
     padding: 15px 0;
 }
-
+app-entete>header>nav:nth-child(1) span {
+  background-color: var(--v);
+}
 app-entete>header>nav:nth-child(2) {
     height: var(--menuh);
     width: var(--menuv);
@@ -131,21 +159,25 @@ app-entete>header>nav:nth-child(2) {
     z-index: 19;
     padding: 0 15px;
 }
-
+app-entete>header>nav:nth-child(2) span {
+  background-color: var(--j);
+}
 main>section {
     width: 50vw;
     flex-flow: column nowrap;
     padding-top: 25px;
 }
-
-main>section>header {
+main>section>*{
+  flex-flow: column nowrap;
+}
+main>section>header, main>section>*>header {
     width: var(--encarts);
     margin: 0;
     color: var(--clair);
     padding: 0 30px;
 }
 
-main>section>blockquote {
+main>section>blockquote, main>section>*>blockquote {
     background-color: var(--clair);
     display: flex;
     flex-flow: row nowrap;
@@ -153,7 +185,7 @@ main>section>blockquote {
     width: var(--encarts);
 }
 
-main>section>blockquote>* {
+main>section>blockquote>*, main>section>*>blockquote>*  {
     padding: 15px;
 }
 
@@ -162,13 +194,13 @@ main>section>blockquote>* {
     height: 170px;
 }
 
-main>section>article {
+main>section>article, main>section>*>article {
     overflow-y: auto;
     background-color: var(--clair);
     padding: 15px;
 }
 
-main>section>footer {
+main>section>footer, main>section>*>footer {
     display: flex;
     flex-flow: row nowrap;
     background-color: var(--clair);
@@ -178,13 +210,14 @@ main>section>footer {
     padding-left: 15px;
 }
 main>section>footer>*,
-main>section>footer>div>* {
+main>section>footer>div>*, main>section>*>footer>*, main>section>*>footer>div>* {
     padding: 10px;
     margin: 0 5px;
 }
 
 main>section>footer img,
-main>section>footer>div img {
+main>section>footer>div img, main>section>*>footer img,
+main>section>*>footer>div img {
     height: 40px;
 }
 
@@ -216,18 +249,25 @@ main>section:nth-child(1) footer nav {
     flex-flow: row nowrap;
     width: 0px;
 }
-main>section:nth-child(2) {}
+main>section:nth-child(2){
+  overflow-y: auto;
+  overflow-x:hidden;
+}
+main>section:nth-child(2)>* {
+  display:flex;
+  flex-flow: column nowrap;
+}
 
-main>section:nth-child(2)>header {
+main>section:nth-child(2)>*>header {
     align-self: flex-end;
     background-color: var(--o);
 }
 
-main>section:nth-child(2)>blockquote {
+main>section:nth-child(2)>*>blockquote {
     align-self: flex-start;
 }
 
-main>section:nth-child(2)>article {
+main>section:nth-child(2)>*>article {
     margin-left: 20%;
 }
 
@@ -250,24 +290,52 @@ main>section:nth-child(2) footer div:nth-child(1) {
 section {
     display: flex;
 }
-
+form{
+  display: flex;
+  flex-flow: column nowrap;
+  padding:15px 30px;
+}
+label{
+  margin-top:15px;
+  margin-bottom: 5px;
+}
+input{
+  padding:10px 15px;
+  font-family: 'Raleway', sans-serif;
+  border:1px solid var(--vc);
+  transition: all .3s ease;
+}
+input:focus{
+  transform: scale(1.1);
+  box-shadow: 3px 3px 0 var(--vc);
+}
+form > div {
+  display:flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+}
 .btn {
     padding: 10px 20px;
     margin: 20px auto;
     transition: all .3s ease;
     color: var(--clair);
+    border:none;
+    cursor: pointer;
+    transition:all .3s ease;
+    font-family: 'Raleway', sans-serif;
 }
-
-.btn:hover {
-    background-color: var(--r);
-}
-
 .btn.rougeorange {
     background-color: var(--ro);
 }
-
 .btn.orange {
     background-color: var(--o);
+}
+.btn.violet {
+  background-color: var(--v);
+}
+
+.btn:hover {
+  background-color: var(--r);
 }
 /** Afficher une lightbox dans le site */
 .lightbox{
@@ -317,15 +385,15 @@ section {
         flex-direction: column;
     }
 
-    main>section {
+    main>section, main>section>* {
         width: 100vw;
     }
 
-    main>section>header {
+    main>section>header, main>section>*>header  {
         width: 80vw;
     }
 
-    main>section>blockquote {
+    main>section>blockquote, main>section>*>blockquote {
         width: 80vw;
     }
 
@@ -356,7 +424,9 @@ section {
     }
 
     main>section>footer,
-    main>section>footer div {
+    main>section>footer div,
+    main>section>*>footer,
+    main>section>*>footer div {
         width: 100vw;
     }
 
@@ -374,8 +444,7 @@ section {
 }
 
 @media (max-width: 550px) {
-    main>section>blockquote {
+    main>section>blockquote, main>section>*>blockquote  {
         width: 100vw;
     }
-
 }

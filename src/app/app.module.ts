@@ -9,13 +9,23 @@ import { AppComponent } from './app.component';
 import { EnteteComponent } from './structure/entete/entete.component';
 import { PiedComponent } from './structure/pied/pied.component';
 import { AccueilComponent } from './pages/accueil/accueil.component';
+import { MentionsComponent } from './pages/mentions/mentions.component';
+import { CandidaterComponent } from './pages/candidater/candidater.component';
+import { PartenairesComponent } from './pages/partenaires/partenaires.component';
+import { NewsletterComponent } from './pages/newsletter/newsletter.component';
+import { ErreurComponent } from './pages/erreur/erreur.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EnteteComponent,
     PiedComponent,
-    AccueilComponent
+    AccueilComponent,
+    MentionsComponent,
+    CandidaterComponent,
+    PartenairesComponent,
+    NewsletterComponent,
+    ErreurComponent
   ],
   imports: [
     BrowserModule,

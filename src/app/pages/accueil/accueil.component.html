@@ -1,1 +1,20 @@
-<p>accueil works!</p>
+<header>
+  <h1>{{ pages.page.header.title }}</h1>
+  <h2>{{ pages.page.header.subtitle }}</h2>
+</header>
+<blockquote>
+  <p>{{ pages.page.header.block }}</p>
+</blockquote>
+<a [href]="pages.page.link!.url" target="_blank" class="btn orange"
+  [title]="pages.page.link!.title" *ngIf="pages.page.link">{{ pages.page.link!.title }}</a>
+  <!-- Article -->
+<article *ngIf="pages.page.article">
+
+</article>
+<!-- Liste de contenus -->
+<article *ngIf="pages.page.list">
+  <div *ngFor="let l of pages.page.list">
+    <h3>{{ l.title }}</h3>
+    <p *ngFor="let p of l.p">{{ p }}</p>
+  </div>
+</article>
