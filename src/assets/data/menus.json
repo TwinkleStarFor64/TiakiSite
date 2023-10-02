@@ -20,9 +20,9 @@
     {
       "title": "S'inscrire à la newsletter",
       "description": "Recevoir la newsletter",
-      "url": "/newsletter",
+      "url": "https://24b01dbe.sibforms.com/serve/MUIFAOdTfYR2sNubz_cCl-jcC3vtUVtrTWU3tTGDrNWkE2_9Kgt5KvDE0N2LnucmciPWzGCrFh2LMp7pGrGD7H4J41VQapA0WfgsSDSHY0OQ3pZlwMWErJm0ASvKdUMsRUgTp8L3_o34vJDMgjdoVBleUaQi14J93kFiDPr6oyw3cUg0t5ej1lZ63ISOmoL5JGaqeIqwLOn_XgKU",
       "image": "assets/images/pictos/bulletin.png",
-      "target": "_self",
+      "target": "_blank",
       "type": "lien",
       "public": true
     },{
@@ -121,7 +121,7 @@
       "title": "Région Nouvelle Aquitaine",
       "description": "La région Nouvelle Aquitaine nous a octroyé un financement pour l'innovation sociale du projet",
       "url": "https://www.nouvelle-aquitaine.fr/",
-      "image": "assets/images/logos/logo-naq.svg",
+      "image": "assets/images/logos/logo_naq.svg",
       "alt":"Logo de la région Nouvelle Aquitaine",
       "type": "lien",
       "public": false

@@ -1,48 +1,48 @@
 [
   {
-    "id":"twinkle",
+    "id": "twinkle",
     "header": {
-      "title":"Twinkle Star For 64",
-      "subtitle":"Association au service des aidants",
-      "block":"Rendre POSSIBLE l'INCLUSION SOCIALE des personnes en difficultés, en situation de handicap, de leurs aidants en écoutant leurs BESOINS/ en les formalisant et en construisant ENSEMBLE des SOLUTIONS INNOVANTES et EFFICACES alliant nouvelles technologies et Economie Sociale et Solidaire !",
-      "image":{
-        "url":"assets/images/logos/logo_twinkle.png",
-        "alt":"Logo de l'associaion Twinkle Star for 64"
+      "title": "Twinkle Star For 64",
+      "subtitle": "Association au service des aidants",
+      "block": "Rendre POSSIBLE l'INCLUSION SOCIALE des personnes en difficultés, en situation de handicap, de leurs aidants en écoutant leurs BESOINS/ en les formalisant et en construisant ENSEMBLE des SOLUTIONS INNOVANTES et EFFICACES alliant nouvelles technologies et Economie Sociale et Solidaire !",
+      "image": {
+        "url": "assets/images/logos/logo_twinkle.png",
+        "alt": "Logo de l'associaion Twinkle Star for 64"
       }
     },
-    "link":{
-      "title":"En savoir plus sur Twinkle Star",
-      "url":"https://www.helloasso.com/associations/twinkle-star-for-64"
+    "link": {
+      "title": "En savoir plus sur Twinkle Star",
+      "url": "https://www.helloasso.com/associations/twinkle-star-for-64"
     }
   },
   {
-    "id":"tiaki",
+    "id": "tiaki",
     "header": {
-      "title":"Tiaki",
-      "subtitle":"Application numérique au service des aidants",
-      "block":"Tiaki est un écosystème d’outils numériques au service des aidants de personnes en situation de handicap ou dépendantes. Ils doivent favoriser le suivi quotidien des soins  pour les médecins et les aidants, favoriser leur organisation, permettre de soutenir les aidants moralement, techniquement et dans leurs savoir-faire."
+      "title": "Tiaki",
+      "subtitle": "Application numérique au service des aidants",
+      "block": "Tiaki est un écosystème d’outils numériques au service des aidants de personnes en situation de handicap ou dépendantes. Ils doivent favoriser le suivi quotidien des soins  pour les médecins et les aidants, favoriser leur organisation, permettre de soutenir les aidants moralement, techniquement et dans leurs savoir-faire."
     },
-    "link":{
-      "title":"Soutenez-nous sur Ulule",
-      "url":"https://fr.ulule.com/twinkle-star-for-64"
+    "link": {
+      "title": "Soutenez-nous sur Ulule",
+      "url": "https://fr.ulule.com/twinkle-star-for-64"
     },
     "list": [
       {
-        "title":"Nutrition",
-        "p":[
+        "title": "Nutrition",
+        "p": [
           "Préparer des plats, des menus en tenant compte des allergènes, participer à l’identification d’allergies et améliorer ou partager vos menus à des tiers ou la communauté.",
           "Tiaki fournit des outils pour les aidants pour la nutrition."
         ]
       },
       {
-        "title":"Neuroréhabilitation par la kiné et l’optométrie",
-        "p":[
+        "title": "Neuroréhabilitation par la kiné et l’optométrie",
+        "p": [
           "Des kinésithérapeute et une optométriste réalisent des tutoriels pour vous aider à prodiguer les soins au quotidien, images et vidéos, programmes pour savoir quoi faire chaque jour pour améliorer l’autonomie de la ou des personnes que vous aidez."
         ]
       },
       {
-        "title":"Des outils organisationnels",
-        "p":[
+        "title": "Des outils organisationnels",
+        "p": [
           "Un journal des soins pour prendre note des évolutions quotidiennes et partager les informations avec le corps médical.",
           "Un agenda intégré pour ne rien oublier.",
           "Un dossier de santé avec des photos et vidéos, des notes que vous pourrez partager."
@@ -51,16 +51,16 @@
     ]
   },
   {
-    "id":"contact",
+    "id": "nous-contacter",
     "header": {
-      "title":"Nous contacter",
-      "subtitle":"Application numérique au service des aidants",
-      "block":"Toute l'équipe est sur le pont jour après jour pour trouver des solutions. N'hésitez pas à nous contacter, nous ferons au mieux pour répondre à vos questions."
+      "title": "Nous contacter",
+      "subtitle": "Application numérique au service des aidants",
+      "block": "Toute l'équipe est sur le pont jour après jour pour trouver des solutions. N'hésitez pas à nous contacter, nous ferons au mieux pour répondre à vos questions."
     },
     "list": [
       {
-        "title":"Où nous trouver ?",
-        "p":[
+        "title": "Où nous trouver ?",
+        "p": [
           "Technopole Hélioparc,",
           "2 avenue Pierre Angot",
           "64053 PAU Cedex 9",
@@ -68,8 +68,8 @@
         ]
       },
       {
-        "title":"A distance",
-        "p":[
+        "title": "A distance",
+        "p": [
           "téléphone : 06 85 39 55 94",
           "Email : admin@tiaki-app.org"
         ]
@@ -77,42 +77,222 @@
     ]
   },
   {
-    "id":"candidater",
+    "id": "candidater",
     "header": {
-      "title":"Devenir bêta testeur",
-      "subtitle":"Tiaki se construit avec des aidants",
-      "block":"Le logiciel va être déployé par phases : alpha, bêta puis enfin publique. Elle sera gratuite pour les aidants pour l'essentiel des fonctionnalités. Nous espérons la rendre publique dans le courant de l'année 2015."
+      "title": "Devenir bêta testeur",
+      "subtitle": "Tiaki se construit avec des aidants",
+      "block": "Le logiciel va être déployé par phases : alpha, bêta puis enfin publique. Elle sera gratuite pour les aidants pour l'essentiel des fonctionnalités. Nous espérons la rendre publique dans le courant de l'année 2015."
     },
     "list": [
       {
-        "title":"Le processus",
-        "p":[
+        "title": "Le processus",
+        "p": [
           "Les tests vont s'appuyer d'abord sur les soutiens sur Ulule. Le financement participatif ouvre des accès anticipés à l'application.",
           "Petit à petit, c'est accès s'ouvriront au plus grand nombre pour arriver finalement à délivrer l'application à tous les aidants.",
           "Il vous est aussi possible de vous inscrire à notre newsletter ou sur nos réseaux sociaux pour suivre les actualités du projet et rester informés des dates de mise à disposition."
         ]
       },
       {
-        "title":"Comment candidater ?",
-        "p":[
+        "title": "Comment candidater ?",
+        "p": [
           "Remplissez le formulaire ci-dessous. Merci de considérer que ce formulaire comprend des données personnelles. Celles-ci seront utilisées pour les tests et pour des communications si vous l'acceptez. Aucune autre utilisation n'en sera faite."
         ]
       }
     ]
   },
   {
-    "id":"newsletter",
+    "id": "newsletter",
     "header": {
-      "title":"Restez connectés",
-      "subtitle":"Inscrivez-vous à la newsletter",
-      "block":"Nous enverrons des nouvelles du projet. Vous pourrez les retrouver sur nos réseaux sociaux ou les recevoir dans votre boîte email en vous inscrivant à notre newsletter."
+      "title": "Restez connectés",
+      "subtitle": "Inscrivez-vous à la newsletter",
+      "block": "Nous enverrons des nouvelles du projet. Vous pourrez les retrouver sur nos réseaux sociaux ou les recevoir dans votre boîte email en vous inscrivant à notre newsletter."
     },
     "list": [
       {
-        "title":"Remplissez le formulaire ci-dessous pour vous inscrire",
-        "p":[""]
+        "title": "Remplissez le formulaire ci-dessous pour vous inscrire",
+        "p": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "id": "partenaires",
+    "header": {
+      "title": "Ils sont avec nous",
+      "subtitle": "Entreprises, associations, collectivités, ils s'unissent et nous soutiennent",
+      "block": "Le projet fédére des partenaires de tous les horizons. Ils faut agir pour les 11 millions d'aidants, les grands oubliés du système de soin et le projet est là pour ça ! Aussi, merci à nos partenaires pour leurs soutiens no"
+    },
+    "list": [
+      {
+        "title": "STEP",
+        "image": {
+          "alt": "Logo de STEP",
+          "url": "assets/images/logos/logo_step.png"
+        },
+        "link": {
+          "title": "Voir le site de STEP",
+          "url": "https://step.eco/"
+        },
+        "p": [
+          "Société de l'économie sociale et solidaire, l'entreprise nous suit et nous soutien depuis le début du projet avec des locaux, du personnel pour le développement et l'animation du projet."
+        ]
+      },
+      {
+        "title": "Cap Gemini",
+        "image": {
+          "alt": "Logo de Cap Gemini",
+          "url": "assets/images/logos/logo_capgemini.jpg"
+        },
+        "link": {
+          "title": "Voir le site de Cap Gemini",
+          "url": "https://www.capgemini.com/fr-fr/"
+        },
+        "p": [
+          "Le leader mondial du conseil en informatique a accordé un mécénat de compétences pour fournir des experts et informaticiens pour cadrer le projet."
+        ]
+      },
+      {
+        "title": "Danse sous la pluie",
+        "image": {
+          "alt": "Logo de Danser sous la pluie",
+          "url": "assets/images/logos/logo_dansesouslapluie.png"
+        },
+        "link": {
+          "title": "Voir le site de Danser sous la pluie",
+          "url": "https://www.helloasso.com/associations/danser-sous-la-pluie"
+        },
+        "p": [
+          "Danser sous la pluie est une association d'aidants qui oeuvrent un niveau national pour les accompagner dans leurs problèmes quotidiens."
+        ]
+      },
+      {
+        "title": "La région Nouvelle Aquitaine",
+        "image": {
+          "alt": "Logo de la région Nouvelle Aquitaine",
+          "url": "assets/images/logos/logo_naq.svg"
+        },
+        "link": {
+          "title": "Voir le site de la région Nouvelle Aquitaine",
+          "url": "https://www.nouvelle-aquitaine.fr/"
+        },
+        "p": [
+          "La région Nouvelle Aquitaine a accordé un financement pour le projet pour son innovation sociale.",
+          "Merci !"
+        ]
+      },
+      {
+        "title": "La communauté d'agglomération paloise",
+        "image": {
+          "alt": "Logo de STEP",
+          "url": "assets/images/logos/logo_agglo-pau.png"
+        },
+        "link": {
+          "title": "Voir le site de l'agglomération paloise",
+          "url": "https://www.pau.fr/categorie/la-communaute-d-agglomeration"
+        },
+        "p": [
+          "L'association Twnikle Star a été lauréate du concours à l'innovation sociale de la communauté d'agglomération paloise pour le projet Tiaki."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mentions",
+    "header": {
+      "title": "Mentions légales",
+      "subtitle": "et traitement des données personnelles",
+      "block": "Conformément aux dispositions de l’article 6 III-1 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, le présent site est la propriété de l'université de Bordeaux."
+    },
+    "list": [
+      {
+        "title": "Directeur de la publication",
+        "p": [
+          "Emilie Barthe-Cissokho",
+          ""
+        ]
+      },
+      {
+        "title": "Informations légales",
+        "p": [
+          "Directeur de la rédaction : Emilie Barthe-Cissokho",
+          "Éditeur : association Twinkle Star for 64"
+        ]
+      },
+      {
+        "title": "Gestion du site",
+        "p": [
+          "Webmestre : Gérald Abbadie",
+          "Courriel : com@tiaki-app.org",
+          "Conception : exlineo",
+          ""
+        ]
+      },
+      {
+        "title": "Crédits photographiques",
+        "p": [
+          "Image by wayhomestudio on Freepik",
+          "Image by benzoix on Freepik",
+          "Images by Freepik",
+          ""
+        ]
+      },
+      {
+        "title": "Hébergement",
+        "p": [
+          "Société OVH Siège social : 2 rue Kellermann - 59100 Roubaix, France",
+          ""
+        ]
+      },
+      {
+        "title": "Droit et propriété intellectuelle",
+        "p": [
+          "L'ensemble de ce site relève de la législation française et internationale sur la propriété intellectuelle. Les photographies, textes, dessins, images et autres protégés par les droits de propriété intellectuelle sont la propriété de l'association Twnikle Star for 64.",
+          "La reproduction sur support papier des pages de ce site est autorisée, sous réserve du respect des conditions suivantes :",
+          "- gratuité de la diffusion",
+          "- respect de l'intégrité des documents reproduits (ni modification ni altération d'aucune sorte)",
+          "- citation explicite du site tiaki-app.org comme source et mention que les droits de reproductions sont réservés et limités",
+          "- La reproduction sur support électronique de tout ou partie du site est autorisée sous réserve de l'ajout clair et lisible de la source (tiaki-app.org) et de la mention 'droits réservés'.",
+          "Cette autorisation ne s'applique pas à des sites diffusant des informations à caractère polémique, pornographique, xénophobe ou pouvant, dans une plus large mesure, porter atteinte à la sensibilité du plus grand nombre. Toute utilisation à des fins publicitaires ou commerciale est exclue. La violation de l'un de ces droits d’exploitation est un délit de contrefaçon passible de poursuite."
+        ]
+      },
+      {
+        "title": "Liens hypertextes",
+        "p": [
+          "Tout lien vers les sites de l'association Twnikle Star for 64 doit faire l'objet d'une demande préalable au webmestre.",
+          "Ce site peut permettre l'établissement de liens vers des sites existants ou hébergés par des tiers. L'existence de tels liens entre le site de l'association Twnikle Star for 64 et les sites tiers ne signifie pas que l'association Twnikle Star for 64 assume une quelconque garantie et responsabilité quant à son contenu ou à l'usage qui peut en être fait.",
+          "Il incombe à l'utilisateur de prendre les précautions nécessaires pour s'assurer de l'absence de virus sur le site visité. l'association Twnikle Star for 64 décline toute responsabilité quant aux sites Internet qui possèdent un lien vers tiaki-app.org.",
+          ""
+        ]
+      },
+      {
+        "title": "Cookies",
+        "p": [
+          "L'utilisateur est informé que lors de ses visites sur le site, un cookie peut s'installer automatiquement et être conservé temporairement en mémoire ou sur son disque dur. Un cookie est un élément qui ne permet pas d'identifier l'utilisateur mais sert à enregistrer des informations relatives à la navigation de celui-ci sur le site internet. L’utilisateur du site reconnaît avoir été informé de cette pratique et autorise l'association Twnikle Star for 64 à l'employer. Ils pourront désactiver ce cookie par l'intermédiaire des paramètres figurant au sein de leur logiciel de navigation.",
+          ""
+        ]
+      },
+      {
+        "title": "Conditions générales d'utilisation du site",
+        "p": [
+          "L’utilisateur reconnaît avoir pris connaissance des présentes conditions d’utilisation et s’engage à les respecter. Cependant, ces mentions ne sont pas exhaustives et les droits que l'association Twnikle Star for 64 pourrait détenir ne sont pas limités par les présentes dispositions.",
+          "Le contenu du site est fourni 'en l'état', sans aucune garantie de quelque nature que ce soit. l'association Twnikle Star for 64 ne garantit, et ne saurait supporter la moindre responsabilité quant à l'usage qui pourrait être fait de ce site.",
+          "En aucun cas, l'association Twnikle Star for 64 ne pourra être tenue responsable des dommages de toute nature, directs ou indirects qui résulteraient de l'utilisation de ce site et notamment des dommages matériels, perte de données ou de programme, résultant de l'accès ou de l'utilisation de ce site ou de tous sites qui lui sont liés.",
+          "Les informations fournies par l'association Twnikle Star for 64 le sont à titre indicatif et ne sauraient dispenser l’utilisateur d’une analyse complémentaire et personnalisée. l'association Twnikle Star for 64 ne saurait garantir l’exactitude, la complétude, l’actualité des informations diffusées sur son site. En conséquence, l’utilisateur reconnaît utiliser ces informations sous sa responsabilité exclusive.",
+          "L’utilisateur du site et des sites s’y rattachant reconnaît avoir vérifié que la configuration informatique utilisée ne contient aucun virus et qu’elle est en parfait état de fonctionnement.",
+          ""
+        ]
+      },
+      {
+        "title": "Mentions relatives à la protection des données personnelles",
+        "p": [
+          "La loi du 6 août 2004 relative à la protection des personnes physiques à l'égard des traitements de données à caractère personnel et modifiant la loi du 6 janvier 1978 relative à l'informatique réglemente l'usage des données nominatives afin de limiter les risques d'utilisation qui seraient contraires aux libertés. En vertu des obligations légales, aucune information personnelle ne sera collectée, ni cédée à des tiers à l’insu de l’utilisateur. De plus, aucune information personnelle n'est utilisée à des fins non prévues par l’utilisateur du site.",
+          "L'utilisateur est notamment informé, conformément à l'article 32 de la loi du 6 août 2004, de l'identité du responsable du traitement, de la finalité du traitement, du caractère obligatoire ou facultatif des réponses, des conséquences du défaut de réponse, du destinataire des informations.",
+          "Conformément à la Loi 'Informatique et Libertés' n°78-17 du 6 janvier 1978, l’utilisateur dispose d'un droit d'accès, de rectification et de suppression des données nominatives le concernant. L’utilisateur peut l'exercer en s’adressant au webmestre.",
+          "L’utilisateur du site et des sites s’y rattachant est tenu de respecter les dispositions de la loi relative à l’informatique, aux fichiers et aux libertés, dont la violation est passible de sanctions pénales. Il doit notamment s’abstenir, s’agissant des informations nominatives auxquelles il accède, de toute collecte, de toute utilisation détournée et, d’une manière générale, de tout acte susceptible de porter atteinte à la vie privée ou la réputation des personnes.",
+          "Les données saisies dans les formulaires de contact sont utilisées dans le seul but d’apporter une réponse, mais ne sont ni stockées, cédées ou transmises à des tiers sauf dans le cas des newsletters dont la gestion est déléguée à l'application Brevo."
+        ]
       }
     ]
   }
-
 ]

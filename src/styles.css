@@ -1,335 +1,383 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600');
 
 :root {
-    /* Variables */
-    --clair: white;
-    --fonce: black;
-    --o: #F28705;
-    --ro: #F22F1D;
-    --r: #D9042B;
-    --v: #270140;
-    --vc: #805E96;
-    --j: #F0C02E;
-    --menuh: 65px;
-    --menuv: 250px;
-    --encarts: 40vw;
+  /* Variables */
+  --clair: white;
+  --fonce: black;
+  --o: #F28705;
+  --ro: #F22F1D;
+  --r: #D9042B;
+  --v: #270140;
+  --vc: #805E96;
+  --j: #F0C02E;
+  --menuh: 65px;
+  --menuv: 250px;
+  --encarts: 40vw;
 }
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-variation-settings: 'wght' 400;
-    font-weight: 400;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-size: 14px;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-variation-settings: 'wght' 400;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    font-family: 'Raleway', sans-serif;
-    flex-flow: column nowrap;
-    font-weight: 400;
-    background: url('./assets/images/bg.png') no-repeat;
-    background-size: cover;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  flex-flow: column nowrap;
+  font-weight: 400;
+  background: url('./assets/images/bg.png') no-repeat;
+  background-size: cover;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h2,
 h4 {
-    font-variation-settings: 'wght' 400;
-    font-weight: 400;
+  font-variation-settings: 'wght' 400;
+  font-weight: 400;
 }
 
 h1 {
-    font-variation-settings: 'wght' 400;
-    font-weight: 400;
-    font-size: 32px;
-    margin: 30px 0 10px;
+  font-variation-settings: 'wght' 400;
+  font-weight: 400;
+  font-size: 32px;
+  margin: 30px 0 10px;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: 100;
-    font-variation-settings: 'wght' 100;
-    margin: 10px 0 30px;
+  font-size: 24px;
+  font-weight: 100;
+  font-variation-settings: 'wght' 100;
+  margin: 10px 0 30px;
 }
 
 h3 {
-    font-size: 21px;
-    margin: 0 5px;
-    font-variation-settings: 'wght' 600;
-    font-weight: 600;
+  font-size: 21px;
+  margin: 0 5px;
+  font-variation-settings: 'wght' 600;
+  font-weight: 600;
 }
 
 a {
-    text-decoration: none;
-    color: var(--r);
-    font-weight: 400;
-    transition: all .3s ease;
+  text-decoration: none;
+  color: var(--r);
+  font-weight: 400;
+  transition: all .3s ease;
 }
 
 a:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
+
 /* Liens des menus */
 .lien a {
-  position:relative;
+  position: relative;
 }
-.lien a:hover{
-  z-index:999;
+
+.lien a:hover {
+  z-index: 999;
 }
-.lien a span{
-  display:none;
-  position:absolute;
-  padding:10px 15px;
-  color:var(--clair);
-  width:100px;
+
+.lien a span {
+  display: none;
+  position: absolute;
+  padding: 10px 15px;
+  color: var(--clair);
+  width: 100px;
   text-align: center;
-  margin-left:-25px;
+  margin-left: -25px;
   pointer-events: none;
 }
-.lien a span.hide{
-  display:flex;
-  opacity:0;
-  margin-top:-20px;
-  transition:all .3s ease;
+
+.lien a span.hide {
+  display: flex;
+  opacity: 0;
+  margin-top: -20px;
+  transition: all .3s ease;
 }
-.lien a:hover span.hide{
-  opacity:1;
-  margin-top:0;
+
+.lien a:hover span.hide {
+  opacity: 1;
+  margin-top: 0;
 }
+
 main {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100vw;
-    height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100vw;
+  height: 100vh;
 }
 
 app-entete>header {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  pointer-events: none;
 }
 
 app-entete>header>nav {
-    display: flex;
-    margin: auto;
-    position: absolute;
-    justify-content: space-between;
-    pointer-events: all;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  justify-content: space-between;
+  pointer-events: all;
 }
-app-entete>header>nav>span, app-entete>header>nav>a {
-    display: flex;
+
+app-entete>header>nav>span,
+app-entete>header>nav>a {
+  display: flex;
 }
-app-entete>header>nav>span>*{
-  margin:auto;
+
+app-entete>header>nav>span>* {
+  margin: auto;
 }
+
 app-entete>header>nav img {
-    /* height:65px; */
-    margin: auto;
+  /* height:65px; */
+  margin: auto;
 }
 
 app-entete>header>nav:nth-child(1) {
-    width: var(--menuh);
-    height: 300px;
-    background-color: var(--v);
-    left: calc(50% - 33px);
-    top: calc(50% - 150px);
-    z-index: 20;
-    flex-flow: column nowrap;
-    padding: 15px 0;
+  width: var(--menuh);
+  height: 300px;
+  background-color: var(--v);
+  left: calc(50% - 33px);
+  top: calc(50% - 150px);
+  z-index: 20;
+  flex-flow: column nowrap;
+  padding: 15px 0;
 }
+
 app-entete>header>nav:nth-child(1) span {
   background-color: var(--v);
 }
+
 app-entete>header>nav:nth-child(2) {
-    height: var(--menuh);
-    width: 250px;
-    background-color: var(--j);
-    left: calc(50% - 125px);
-    top: calc(50% - 33px);
-    z-index: 19;
-    padding: 0 15px;
+  height: var(--menuh);
+  width: 250px;
+  background-color: var(--j);
+  left: calc(50% - 125px);
+  top: calc(50% - 33px);
+  z-index: 19;
+  padding: 0 15px;
 }
+
 app-entete>header>nav:nth-child(2) span {
   background-color: var(--j);
 }
+
 main>section {
-    width: 50vw;
-    flex-flow: column nowrap;
-    padding-top: 25px;
+  width: 50vw;
+  flex-flow: column nowrap;
+  padding-top: 25px;
 }
-main>section>*{
+
+main>section>* {
   flex-flow: column nowrap;
 }
-main>section>header, main>section>*>header {
-    width: var(--encarts);
-    margin: 0;
-    color: var(--clair);
-    padding: 0 30px;
+
+main>section>header,
+main>section>*>header {
+  width: var(--encarts);
+  margin: 0;
+  color: var(--clair);
+  padding: 0 30px;
 }
 
-main>section>blockquote, main>section>*>blockquote {
-    background-color: var(--clair);
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 0;
-    width: var(--encarts);
+main>section>blockquote,
+main>section>*>blockquote {
+  background-color: var(--clair);
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+  width: var(--encarts);
 }
 
-main>section>blockquote>*, main>section>*>blockquote>*  {
-    padding: 15px;
+main>section>blockquote>*,
+main>section>*>blockquote>* {
+  padding: 15px;
 }
 
 .logo {
-    width: 170px;
-    height: 170px;
+  width: 170px;
+  height: 170px;
 }
 
-main>section>article, main>section>*>article {
-    overflow-y: auto;
-    background-color: var(--clair);
-    padding: 15px;
+main>section>article,
+main>section>*>article {
+  overflow-y: auto;
+  background-color: var(--clair);
+  padding: 15px;
 }
 
-main>section>footer, main>section>*>footer {
-    display: flex;
-    flex-flow: row nowrap;
-    background-color: var(--clair);
-    height: 60px;
-    margin-top: auto;
-    align-items: center;
-    padding-left: 15px;
+main>section>footer,
+main>section>*>footer {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: var(--clair);
+  height: 60px;
+  margin-top: auto;
+  align-items: center;
+  padding-left: 15px;
 }
+
 main>section>footer>*,
-main>section>footer>div>*, main>section>*>footer>*, main>section>*>footer>div>* {
-    padding: 10px;
-    margin: 0 5px;
+main>section>footer>div>*,
+main>section>*>footer>*,
+main>section>*>footer>div>* {
+  padding: 10px;
+  margin: 0 5px;
 }
 
 main>section>footer img,
-main>section>footer>div img, main>section>*>footer img,
+main>section>footer>div img,
+main>section>*>footer img,
 main>section>*>footer>div img {
-    height: 40px;
+  height: 40px;
 }
 
 main>section:nth-child(1) {
-    background: url('./assets/enfant-exercice.jpg') no-repeat;
-    background-size: cover;
+  background: url('./assets/enfant-exercice.jpg') no-repeat;
+  background-size: cover;
 }
 
 main>section:nth-child(1)>header {
-    align-self: flex-start;
-    background-color: var(--ro);
-    text-align: right;
+  align-self: flex-start;
+  background-color: var(--ro);
+  text-align: right;
 }
 
 main>section:nth-child(1)>blockquote {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 main>section:nth-child(1)>article {
-    margin-right: 200px;
+  margin-right: 200px;
 }
 
 main>section:nth-child(1) footer {
-    align-self: flex-end;
+  align-self: flex-end;
 }
+
 main>section:nth-child(1) footer nav {
-    margin-top: -100px;
-    display: flex;
-    flex-flow: row nowrap;
-    width: 0px;
+  margin-top: -100px;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 0px;
 }
-main>section:nth-child(2){
+
+main>section:nth-child(2) {
   overflow-y: auto;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
+
 main>section:nth-child(2)>* {
-  display:flex;
+  display: flex;
   flex-flow: column nowrap;
 }
 
 main>section:nth-child(2)>*>header {
-    align-self: flex-end;
-    background-color: var(--o);
+  align-self: flex-end;
+  background-color: var(--o);
 }
 
 main>section:nth-child(2)>*>blockquote {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 main>section:nth-child(2)>*>article {
-    margin-left: 20%;
+  margin-left: 20%;
+}
+
+main>section:nth-child(2)>*>article p {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+main>section:nth-child(2)>*>article img {
+  height: 60px;
+  margin-right: 10px;
 }
 
 main>section:nth-child(2) footer {
-    flex-flow: column nowrap;
+  flex-flow: column nowrap;
 }
 
 main>section:nth-child(2) footer div {
-    display: flex;
-    flex-flow: row nowrap;
-    background-color: var(--clair);
-    padding:0 10px;
-    align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: var(--clair);
+  padding: 0 10px;
+  align-items: center;
 }
 
 main>section:nth-child(2) footer div:nth-child(1) {
-    display: none;
+  display: none;
 }
 
 section {
-    display: flex;
+  display: flex;
 }
-form{
+
+form {
   display: flex;
   flex-flow: column nowrap;
-  padding:15px 30px;
+  padding: 15px 30px;
 }
-label{
-  margin-top:15px;
+
+label {
+  margin-top: 15px;
   margin-bottom: 5px;
 }
-input{
-  padding:10px 15px;
+
+input {
+  padding: 10px 15px;
   font-family: 'Raleway', sans-serif;
-  border:1px solid var(--vc);
+  border: 1px solid var(--vc);
   transition: all .3s ease;
 }
-input:focus{
-  font-size:21px;
+
+input:focus {
+  font-size: 21px;
   box-shadow: 3px 3px 0 var(--vc);
 }
-form > div {
-  display:flex;
+
+form>div {
+  display: flex;
   flex-flow: row nowrap;
   align-items: flex-end;
 }
+
 .btn {
-    padding: 10px 20px;
-    margin: 20px auto;
-    transition: all .3s ease;
-    color: var(--clair);
-    border:none;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
+  padding: 10px 20px;
+  margin: 20px auto;
+  transition: all .3s ease;
+  color: var(--clair);
+  border: none;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  width:fit-content;
 }
+
 .btn.rougeorange {
-    background-color: var(--ro);
+  background-color: var(--ro);
 }
+
 .btn.orange {
-    background-color: var(--o);
+  background-color: var(--o);
 }
+
 .btn.violet {
   background-color: var(--v);
 }
@@ -337,114 +385,141 @@ form > div {
 .btn:hover {
   background-color: var(--r);
 }
+
 /** Afficher une lightbox dans le site */
-.lightbox{
-    display:none;
-    width:100vw;
-    height:100vh;
-    background: rgba(255, 255, 255, .6);
+.lightbox {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, .6);
 }
-.lightbox > article {
-    display:flex;
-    flex-flow: column nowrap;
-    margin:auto;
+
+.lightbox>article {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: auto;
 }
+
 /* SCROLLBARS */
 ::-webkit-scrollbar {
-    width: 14px;
+  width: 14px;
 }
 
 ::-webkit-scrollbar-track {
-    /* background-color: #e4e4e4;
+  /* background-color: #e4e4e4;
     border-radius: 100px; */
-    background-color: white;
-    border-left: 1px solid var(--j);
+  background-color: white;
+  border-left: 1px solid var(--j);
 }
 
 ::-webkit-scrollbar-thumb {
-    /* border-radius: 50px; */
-    border: 5px solid transparent;
-    background-clip: content-box;
-    background-color: var(--v);
+  /* border-radius: 50px; */
+  border: 5px solid transparent;
+  background-clip: content-box;
+  background-color: var(--v);
 }
 
 /* Pour Firefox */
 .scroller {
-    overflow-y: auto;
-    scrollbar-color: rgba(255, 255, 255, .2) var(--v);
-    scrollbar-width: thin;
+  overflow-y: auto;
+  scrollbar-color: rgba(255, 255, 255, .2) var(--v);
+  scrollbar-width: thin;
 }
 
 /* MEDIA QUERIES */
 @media (max-width: 980px) {
-    body {
-        overflow-y: auto;
-    }
+  body {
+    overflow-y: auto;
+  }
 
-    main {
-        flex-direction: column;
-    }
+  main {
+    flex-direction: column;
+    height:fit-content;
+  }
 
-    main>section, main>section>* {
-        width: 100vw;
-    }
+  main>section,
+  main>section>* {
+    width: 100vw;
+  }
 
-    main>section>header, main>section>*>header  {
-        width: 80vw;
-    }
+  main>section>header,
+  main>section>*>header {
+    width: 90vw;
+  }
 
-    main>section>blockquote, main>section>*>blockquote {
-        width: 80vw;
-    }
+  main>section>blockquote,
+  main>section>*>blockquote {
+    width: 90vw;
+  }
 
-    body {
-        display: flex;
-        flex-flow: column nowrap;
-    }
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 
-    app-entete>header {
-        height: var(--menuh);
-        display: flex;
-        flex-flow: row nowrap;
-        position: relative;
-    }
+  app-entete>header {
+    height: var(--menuh);
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+  }
 
-    app-entete>header>nav {
-        position: static;
-        justify-content: space-around;
-        width: 50vw !important;
-        height: var(--menuh) !important;
-        align-items: center;
-        /* top:0 !important;
+  app-entete>header>nav {
+    position: static;
+    justify-content: space-around;
+    width: 50vw !important;
+    height: var(--menuh) !important;
+    align-items: center;
+    /* top:0 !important;
         left:0 !important; */
-    }
+  }
 
-    app-entete>header>nav:nth-child(1) {
-        flex-direction: row;
-    }
+  app-entete>header>nav:nth-child(1) {
+    flex-direction: row;
+    flex: 2;
+  }
+  main>section:nth-child(2)>*>article {
+    margin-left: 10%;
+}
+  app-entete>header>nav:nth-child(2) {
+    flex: 1;
+  }
 
-    main>section>footer,
-    main>section>footer div,
-    main>section>*>footer,
-    main>section>*>footer div {
-        width: 100vw;
-    }
+  main>section>footer,
+  main>section>footer div,
+  main>section>*>footer,
+  main>section>*>footer div {
+    width: 100vw;
+  }
 
-    main>section:nth-child(1) footer {
-        display: none;
-    }
+  main>section:nth-child(1) footer {
+    display: none;
+  }
 
-    main>section:nth-child(2) footer {
-        margin-top: 50px;
-    }
+  main>section:nth-child(2) {
+    overflow: hidden;
+  }
 
-    main>section:nth-child(2) footer div:nth-child(1) {
-        display: flex;
-    }
+  main>section:nth-child(2) footer {
+    margin-top: 50px;
+    height: auto;
+    overflow-x : auto;
+    overflow-y : hidden;
+  }
+
+  main>section:nth-child(2) footer div:nth-child(1) {
+    display: flex;
+  }
+  main>section:nth-child(2)>*>article img {
+    height: auto;
+    width:100px;
+}
 }
 
 @media (max-width: 550px) {
-    main>section>blockquote, main>section>*>blockquote  {
-        width: 100vw;
-    }
+
+  main>section>blockquote,
+  main>section>*>blockquote {
+    width: 100vw;
+  }
 }

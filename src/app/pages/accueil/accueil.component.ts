@@ -11,7 +11,6 @@ export class AccueilComponent implements OnInit {
   constructor(public contenu:PagesService) { }
 
   ngOnInit(): void {
-    this.contenu.pages.length > 0 ? this.contenu.getPage('tiaki') : this.contenu.id = 'tiaki';
   }
 
 }

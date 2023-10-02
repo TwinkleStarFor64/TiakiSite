@@ -26,7 +26,6 @@ export class CandidaterComponent implements OnInit {
   constructor(public contenu:PagesService) { }
 
   ngOnInit(): void {
-    this.contenu.pages.length > 0 ? this.contenu.getPage('candidater') : this.contenu.id = 'candidater';
   }
   /**
    * Formulaire d'inscription

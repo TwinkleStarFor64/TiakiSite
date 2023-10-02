@@ -55,6 +55,8 @@ export interface HeaderI {
 }
 export interface listContentI {
   title: string;
+  image?: MediaI;
+  link?:LienI;
   p: Array<string>;
 }
 export interface MediaI {

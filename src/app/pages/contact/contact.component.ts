@@ -11,7 +11,6 @@ export class ContactComponent implements OnInit {
   constructor(public contenu:PagesService) { }
 
   ngOnInit(): void {
-    this.contenu.pages.length > 0 ? this.contenu.getPage('contact') : this.contenu.id = 'contact';
   }
 
 }

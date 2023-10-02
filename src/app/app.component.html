@@ -13,19 +13,16 @@
     </blockquote>
     <a href="https://www.helloasso.com/associations/twinkle-star-for-64" target="_blank" class="btn rougeorange"
       title="Découvrir l'association">En savoir plus sur Twinkle Star</a>
-    <!-- <article></article> -->
     <footer>
       <nav>
         <span *ngFor="let l of pages.menus.social">
           <!-- Si lien interne -->
           <a [routerLink]="l.url" [title]="l.description" *ngIf="l.target != '_blank'">
             <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
-            <!-- <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span> -->
           </a>
           <!-- Si lien externe -->
           <a [href]="l.url" [title]="l.description" [target]="l.target" *ngIf="l.target == '_blank'">
             <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
-            <!-- <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span> -->
           </a>
         </span>
       </nav>
@@ -51,17 +48,25 @@
         <a *ngFor="let l of pages.menus.social" [href]="l.url" [title]="l.description" [target]="l.target">
           <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
           <span *ngIf="!l.image">{{ l.title }}</span>
+        </a>
+        <span *ngFor="let l of pages.menus.foot">
+          <!-- Si lien interne -->
+          <a [routerLink]="l.url" [title]="l.description" *ngIf="l.target != '_blank'">
+            <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
+            <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span>
           </a>
-        <a *ngFor="let l of pages.menus.foot" [href]="l.url" [title]="l.description" [target]="l.target">
-          <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
-          <span *ngIf="!l.image">{{ l.title }}</span>
+          <!-- Si lien externe -->
+          <a [href]="l.url" [title]="l.description" [target]="l.target" *ngIf="l.target == '_blank'">
+            <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
+            <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span>
           </a>
+        </span>
       </div>
       <div>
         <a *ngFor="let l of pages.menus.partners" [href]="l.url" [title]="l.description" [target]="l.target">
           <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
           <span *ngIf="!l.image">{{ l.title }}</span>
-          </a>
+        </a>
       </div>
     </footer>
   </section>
