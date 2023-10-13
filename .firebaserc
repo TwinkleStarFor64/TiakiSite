@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tiaki-site": {
+      "hosting": {
+        "TiakiSite": [
+          "tiaki-site"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tiaki-site"
+  }
+}

@@ -1,3 +1,4 @@
+import { inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Menus, MenusI, Page, PageI } from '../models';
@@ -5,6 +6,8 @@ import { BehaviorSubject } from 'rxjs';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
+import { Firestore, collectionData, collection } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +18,10 @@ export class PagesService {
   pages: Array<PageI> = [];
   id: string = 'tiaki'; // Id de la page à afficher
   page: PageI = new Page(); // Contenu de la page en cours
-  page$: BehaviorSubject<PageI> = new BehaviorSubject<PageI>(new Page()); // Contenu de la page en cours
+  // page$: BehaviorSubject<PageI> = new BehaviorSubject<PageI>(new Page()); // Contenu de la page en cours
+
+  pages$!: Observable<Array<PageI>>;
+  firestore: Firestore = inject(Firestore);
   /**
    * Service to get data from pages and menus
    * @param http HttpClient instance to load data
@@ -41,6 +47,12 @@ export class PagesService {
       complete: () => this.getPage('tiaki')
     });
   }
+  /** Get data from firebase */
+  getFirePages(){
+    const itemCollection = collection(this.firestore, 'pages');
+    // this.pages$ = collectionData(itemCollection);
+    collectionData(itemCollection).subscribe(p => console.log(p));
+  }
   /** Get list of content in pages */
   getPages() {
     this.http.get<Array<PageI>>('assets/data/pages.json').subscribe({
@@ -61,7 +73,6 @@ export class PagesService {
     console.log(p, id);
     if (p) {
       this.page = p;
-      this.page$.next(p);
     };
     // return p;
   }

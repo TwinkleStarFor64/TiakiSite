@@ -15,6 +15,11 @@ import { PartenairesComponent } from './pages/partenaires/partenaires.component'
 import { NewsletterComponent } from './pages/newsletter/newsletter.component';
 import { ErreurComponent } from './pages/erreur/erreur.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,11 @@ import { ContactComponent } from './pages/contact/contact.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent]
