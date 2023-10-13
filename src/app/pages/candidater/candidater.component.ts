@@ -32,6 +32,7 @@ export class CandidaterComponent implements OnInit {
    * @param f Données du formmulaire
    */
   go(f:NgForm){
-    console.log(f);
+    console.log(f.value);
+    this.contenu.setBetaForm(this.candidature);
   }
 }

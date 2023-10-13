@@ -12,6 +12,7 @@ const routes: Routes = [
   {path:'', component:AccueilComponent},
   {path:'mentions', component:MentionsComponent},
   {path:'testeur', component:CandidaterComponent},
+  {path:'testeur-valid', component:CandidaterComponent},
   {path:'partenaires', component:PartenairesComponent},
   {path:'newsletter', component:NewsletterComponent},
   {path:'nous-contacter', component:ContactComponent},

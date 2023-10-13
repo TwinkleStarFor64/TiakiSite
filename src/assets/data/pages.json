@@ -121,7 +121,7 @@
     "header": {
       "title": "Ils sont avec nous",
       "subtitle": "Entreprises, associations, collectivités, ils s'unissent et nous soutiennent",
-      "block": "Le projet fédére des partenaires de tous les horizons. Ils faut agir pour les 11 millions d'aidants, les grands oubliés du système de soin et le projet est là pour ça ! Aussi, merci à nos partenaires pour leurs soutiens no"
+      "block": "Le projet fédére des partenaires de tous les horizons. Ils faut agir pour les 11 millions d'aidants, les grands oubliés du système de soin et le projet est là pour ça ! Aussi, merci à nos partenaires pour leurs soutiens"
     },
     "list": [
       {
@@ -184,7 +184,7 @@
       {
         "title": "La communauté d'agglomération paloise",
         "image": {
-          "alt": "Logo de STEP",
+          "alt": "Logo de la communauté d'agglomération paloise",
           "url": "assets/images/logos/logo_agglo-pau.png"
         },
         "link": {
@@ -193,6 +193,20 @@
         },
         "p": [
           "L'association Twnikle Star a été lauréate du concours à l'innovation sociale de la communauté d'agglomération paloise pour le projet Tiaki."
+        ]
+      },
+      {
+        "title": "Le Conseil Départemental du 64",
+        "image": {
+          "alt": "Logo du conseil départemental",
+          "url": "assets/images/logos/logo_CD64.png"
+        },
+        "link": {
+          "title": "Voir le site du déprtement du 64",
+          "url": "https://www.le64.fr/"
+        },
+        "p": [
+          "Le Conseil Départemantal des Pyrénées-Atlantique soutient le projet Tiaki pour son innovation sociale."
         ]
       }
     ]
