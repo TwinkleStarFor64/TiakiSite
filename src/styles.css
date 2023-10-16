@@ -340,7 +340,9 @@ label {
   margin-top: 15px;
   margin-bottom: 5px;
 }
-
+form h3{
+  margin:20px 0 10px;
+}
 input {
   padding: 10px 15px;
   font-family: 'Raleway', sans-serif;
@@ -352,13 +354,27 @@ input:focus {
   font-size: 21px;
   box-shadow: 3px 3px 0 var(--vc);
 }
-
+form label{
+  display:flex;
+  flex-flow: column nowrap;
+  margin:5px auto;
+}
+textarea{
+  width:100%;
+}
 form>div {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-end;
+  flex-flow: row wrap;
 }
 
+form>div:nth-child(2) {
+  display: flex;
+  flex-flow: column nowrap;
+}
+form>div:nth-child(3) {
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
 .btn {
   padding: 10px 20px;
   margin: 20px auto;

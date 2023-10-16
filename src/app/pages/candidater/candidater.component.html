@@ -19,21 +19,24 @@
   </div>
 </article>
 <article>
-  <h3>Proposer votre candidature</h3>
+  <h2>Proposer votre candidature</h2>
   <form (submit)="go(f)" #f="ngForm">
-    <label><strong>Votre nom complet *</strong></label>
-    <input name="nom" [(ngModel)]="candidature.nom" required>
-    <label><strong>Un email valide *</strong></label>
-    <input name="email" [(ngModel)]="candidature.email" required>
-    <label><strong>téléphone ? *</strong></label>
-    <input name="tel" [(ngModel)]="candidature.tel">
-    <label>Indiquez votre adresse</label>
-    <input name="adresse" [(ngModel)]="candidature.adresse">
-    <label>Code postal</label>
-    <input name="codePostal" [(ngModel)]="candidature.codePostal">
-    <label>Ville</label>
-    <input name="ville" [(ngModel)]="candidature.ville">
+    <div>
+    <label><strong>Votre nom complet *</strong>
+    <input name="nom" [(ngModel)]="candidature.nom" required></label>
+    <label><strong>Un email valide *</strong>
+    <input name="email" [(ngModel)]="candidature.email" required></label>
+    <label><strong>téléphone ? *</strong>
+    <input name="tel" [(ngModel)]="candidature.tel"></label>
+    <label>Indiquez votre adresse
+    <input name="adresse" [(ngModel)]="candidature.adresse"></label>
+    <label>Code postal
+    <input name="codePostal" [(ngModel)]="candidature.codePostal"></label>
+    <label>Ville
+    <input name="ville" [(ngModel)]="candidature.ville"></label>
     <p><em>* Champs obligatoires</em></p>
+  </div>
+  <div>
     <h3>Parlez-nous de vous</h3>
     <label>Êtes-vous intéressé par des outils pour la nutrition ? Si oui, pourquoi ?</label>
     <textarea name="nutition" [(ngModel)]="candidature.nutrition">
@@ -47,9 +50,9 @@
     <label>Êtes-vous intéressé par l'optométrie ? Si oui, pourquoi ?</label>
     <textarea name="opto" [(ngModel)]="candidature.opto">
     </textarea>
-
+  </div>
     <!-- <input name="opto" [(ngModel)]="candidature.opto"> -->
-    <div>
+    <div class="boutons">
       <button type="reset" class="btn orange">Annuler</button>
       <button type="submit" class="btn violet">Envoyer</button>
     </div>
