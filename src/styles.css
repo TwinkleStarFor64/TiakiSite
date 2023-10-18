@@ -316,7 +316,7 @@ main>section:nth-child(2) footer {
 
 main>section:nth-child(2) footer div {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   background-color: var(--clair);
   padding: 0 10px;
   align-items: center;
@@ -343,14 +343,14 @@ label {
 form h3{
   margin:20px 0 10px;
 }
-input {
+input, textarea {
   padding: 10px 15px;
   font-family: 'Raleway', sans-serif;
   border: 1px solid var(--vc);
   transition: all .3s ease;
 }
 
-input:focus {
+input:focus, textarea:focus {
   font-size: 21px;
   box-shadow: 3px 3px 0 var(--vc);
 }
@@ -372,7 +372,7 @@ form>div:nth-child(2) {
   flex-flow: column nowrap;
 }
 form>div:nth-child(3) {
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   align-items: flex-end;
 }
 .btn {

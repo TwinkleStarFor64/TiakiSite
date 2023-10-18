@@ -1,1 +1,20 @@
-<p>candidater-valid works!</p>
+<header>
+  <h1>{{ contenu.page.header.title }}</h1>
+  <h2>{{ contenu.page.header.subtitle }}</h2>
+</header>
+<blockquote>
+  <p>{{ contenu.page.header.block }}</p>
+</blockquote>
+<a [href]="contenu.page.link!.url" target="_blank" class="btn orange"
+  [title]="contenu.page.link!.title" *ngIf="contenu.page.link">{{ contenu.page.link!.title }}</a>
+  <!-- Article -->
+<article *ngIf="contenu.page.article">
+
+</article>
+<!-- Liste de contenus -->
+<article *ngIf="contenu.page.list">
+  <div *ngFor="let l of contenu.page.list">
+    <h3>{{ l.title }}</h3>
+    <p *ngFor="let p of l.p">{{ p }}</p>
+  </div>
+</article>

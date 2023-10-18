@@ -125,6 +125,14 @@
       "alt":"Logo de la région Nouvelle Aquitaine",
       "type": "lien",
       "public": false
+    },{
+      "title": "Département du 64",
+      "description": "Le département des Pyrénées-Atlantiques nous soutient par des financements",
+      "url": "https://www.le64.fr/",
+      "image": "assets/images/logos/logo_CD64.png",
+      "alt":"Logo du département",
+      "type": "lien",
+      "public": true
     },
     {
       "title": "Danser sous la pluie",
