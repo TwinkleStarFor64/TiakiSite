@@ -63,3 +63,13 @@ export interface MediaI {
   url: string;
   alt: string;
 }
+export interface PartenaireI {
+  title:string;
+  description:string;
+  url:string;
+  image:string;
+  alt:string;
+  type?:string;
+  public?:boolean;
+  ordre:number
+}

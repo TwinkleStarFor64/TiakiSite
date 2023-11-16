@@ -17,7 +17,7 @@
     <h3><a [href]="l.link.url" [title]="l.link.title" *ngIf="l.link" target="_blank">{{ l.title }}</a></h3>
 
     <p *ngFor="let p of l.p; let i=index"><a [href]="l.link.url" [title]="l.link.title" *ngIf="l.link && i==0" target="_blank">
-      <img [src]="l.image.url" [alt]="l.image.alt" *ngIf="l.image">
+      <!-- <img [src]="l.image.url" [alt]="l.image.alt" *ngIf="l.image"> -->
     </a>{{ p }}</p>
   </div>
 </article>

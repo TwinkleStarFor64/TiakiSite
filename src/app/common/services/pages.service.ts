@@ -1,6 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Menus, MenusI, Page, PageI } from '../models';
+import { Menus, MenusI, Page, PageI, PartenaireI } from '../models';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
@@ -12,10 +12,12 @@ import { Observable } from 'rxjs';
 })
 export class PagesService {
 
-  router:Router = inject(Router);
+  router: Router = inject(Router);
 
   menus: MenusI = new Menus();
   pages: Array<PageI> = [];
+  partenaires: Array<PartenaireI> = [];
+
   id: string = 'tiaki'; // Id de la page à afficher
   page: PageI = new Page(); // Contenu de la page en cours
   // page$: BehaviorSubject<PageI> = new BehaviorSubject<PageI>(new Page()); // Contenu de la page en cours
@@ -32,9 +34,9 @@ export class PagesService {
 
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
-    ).subscribe((event:any) => {
+    ).subscribe((event: any) => {
       console.log(event.url, event.url.length);
-      if(event.url.length > 1) this.id = event.url.substring(1, event.url.length);
+      event.url.length > 1 ? this.id = event.url.substring(1, event.url.length) : this.id = 'tiaki';
       console.log(this.id);
       this.getPage();
     });
@@ -46,13 +48,14 @@ export class PagesService {
       next: (m) => {
         this.menus = m;
         console.log(m);
+        this.getFirePartners();
       },
       error: (e) => console.log(e),
       complete: () => this.getPage('tiaki')
     });
   }
   /** Get data from firebase */
-  getFirePages(){
+  getFirePages() {
     const itemCollection = collection(this.firestore, 'pages');
     collectionData(itemCollection).subscribe({
       next: (p) => {
@@ -61,12 +64,20 @@ export class PagesService {
         console.log("Fire pages", p);
       },
       error: (e) => console.log(e),
-      complete: () => {
-        console.log("Complete");
-        this.getMenus()}
+      complete: () => console.log("Complete")
     });
   }
-
+  /** Get data from firebase */
+  getFirePartners() {
+    collectionData(collection(this.firestore, 'partenaires')).subscribe({
+      next: (p) => {
+        this.partenaires = (p as Array<PartenaireI>).sort((a, b) => a.ordre - b.ordre);
+        console.log("Fire pages", p);
+      },
+      error: (e) => console.log(e),
+      complete: () => console.log("Complete")
+    });
+  }
   /**
    * Get a page by his id
    * @param id Id of the page to get
@@ -80,11 +91,12 @@ export class PagesService {
     };
   }
   /** Send date to database from test form */
-  setBetaForm(testeur:any){
+  setBetaForm(testeur: any) {
     setDoc(doc(this.firestore, "beta-testeurs", testeur.email), testeur)
-    .then(data => {
-      this.router.navigateByUrl('/testeur-valid');
-      console.log(data)})
-    .catch(er => console.log(er));
+      .then(data => {
+        this.router.navigateByUrl('/testeur-valid');
+        console.log(data)
+      })
+      .catch(er => console.log(er));
   }
 }
