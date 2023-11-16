@@ -1,16 +1,20 @@
 <header>
   <nav>
-    <span *ngFor="let l of pages.menus.main" class="lien">
-      <!-- Si lien interne -->
-      <a [routerLink]="l.url" [title]="l.description" *ngIf="l.target != '_blank'">
-        <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
-        <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span>
-      </a>
-      <!-- Si lien externe -->
-      <a [href]="l.url" [title]="l.description" [target]="l.target" *ngIf="l.target == '_blank'">
-        <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
-        <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span>
-      </a>
+    <span>
+      <ng-container *ngFor="let l of pages.menus.main">
+        <!-- Si lien interne -->
+        <a [routerLink]="l.url" [title]="l.description" *ngIf="l.target != '_blank'">
+          <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
+          <!-- <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span> -->
+          {{ l.title }}
+        </a>
+        <!-- Si lien externe -->
+        <a [href]="l.url" [title]="l.description" [target]="l.target" *ngIf="l.target == '_blank'">
+          <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
+          <!-- <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span> -->
+          {{ l.title }}
+        </a>
+      </ng-container>
     </span>
   </nav>
   <nav>

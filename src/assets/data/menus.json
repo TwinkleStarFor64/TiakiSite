@@ -9,8 +9,8 @@
       "public": true
     },
     {
-      "title": "Devenir beta testeur",
-      "description": "Participez aux tests dès que l'application sera disponible",
+      "title": "Beta test",
+      "description": "Inscrivez-vous pour participez aux tests dès que l'application sera disponible",
       "url": "/testeur",
       "image": "assets/images/pictos/tests.png",
       "target": "_self",
@@ -18,15 +18,15 @@
       "public": true
     },
     {
-      "title": "S'inscrire à la newsletter",
-      "description": "Recevoir la newsletter",
+      "title": "Newsletter",
+      "description": "S'inscrire à la newsletter",
       "url": "https://24b01dbe.sibforms.com/serve/MUIFAOdTfYR2sNubz_cCl-jcC3vtUVtrTWU3tTGDrNWkE2_9Kgt5KvDE0N2LnucmciPWzGCrFh2LMp7pGrGD7H4J41VQapA0WfgsSDSHY0OQ3pZlwMWErJm0ASvKdUMsRUgTp8L3_o34vJDMgjdoVBleUaQi14J93kFiDPr6oyw3cUg0t5ej1lZ63ISOmoL5JGaqeIqwLOn_XgKU",
       "image": "assets/images/pictos/bulletin.png",
       "target": "_blank",
       "type": "lien",
       "public": true
     },{
-      "title": "Parcourir l'application",
+      "title": "Le prototype",
       "description": "Parcourir le prototype de l'application",
       "url": "https://alpha.tiaki-app.org",
       "image": "assets/images/pictos/app.png",
@@ -46,10 +46,10 @@
       "public": true
     },
     {
-      "title": "Adhérer",
-      "description": "Adhérer sur Helloasso",
-      "url": "https://www.helloasso.com/associations/twinkle-star-for-64",
-      "image": "assets/images/logos/logo_helloasso.png",
+      "title": "Tookets",
+      "description": "Offrez-nous vos Tookets",
+      "url": "https://www.tookets.com/detail-association/TWINKLE-STAR-FOR-64?id=0a863a7f-4774-4b52-af00-f8a7ab43a36e",
+      "image": "assets/images/logos/logo_tookets_carre.png",
       "type": "lien",
       "target": "_blank",
       "public": true

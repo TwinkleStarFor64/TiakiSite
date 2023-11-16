@@ -183,20 +183,40 @@ app-entete>header>nav img {
 }
 
 app-entete>header>nav:nth-child(1) {
-  width: var(--menuh);
-  height: 300px;
-  background-color: var(--v);
-  left: calc(50% - 33px);
-  top: calc(50% - 150px);
+  width: 80px;
+  height: 100vh;
+  left: calc(50% - 40px);
+  /* top: calc(50% - 150px); */
+  top:0;
   z-index: 20;
-  flex-flow: column nowrap;
-  padding: 15px 0;
+  pointer-events: none;
 }
 
 app-entete>header>nav:nth-child(1) span {
-  background-color: var(--v);
+  color: var(--clair);
+  text-align: center;
+  padding:20px 0;
+  pointer-events: all;
+  display:flex;
+  flex-flow:column nowrap;
+  margin:auto;
+  font-weight: 600;
+  width:100%;
 }
-
+app-entete>header>nav:nth-child(1) span img {
+  max-width:75%;
+}
+app-entete>header>nav:nth-child(1) span a {
+  background-color: var(--v);
+  color: var(--clair);
+  padding:10px 3px;
+  width:100%;
+  display:flex;
+  flex-flow:column nowrap;
+}
+app-entete>header>nav:nth-child(1) span a:hover {
+  background-color: var(--o);
+}
 app-entete>header>nav:nth-child(2) {
   height: var(--menuh);
   width: 250px;
@@ -427,6 +447,14 @@ form>div:nth-child(3) {
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
   width: fit-content;
+  display:flex;
+  flex-flow:row wrap;
+  align-items: center;
+}
+
+.btn > img {
+  max-width:40px;
+  margin-right:10px;
 }
 
 .btn.rougeorange {
@@ -535,13 +563,24 @@ form>div:nth-child(3) {
     position: static;
     justify-content: space-around;
     width: 50vw !important;
-    height: var(--menuh) !important;
+    height: 80px !important;
     align-items: center;
   }
 
   app-entete>header>nav:nth-child(1) {
-    flex-direction: row;
     flex: 2;
+  }
+  app-entete>header>nav:nth-child(1) > span{
+    flex-direction: row;
+    height:100%;
+    padding:0;
+  }
+  app-entete>header>nav:nth-child(1) > span a{
+    height:100%;
+    margin:0;
+  }
+  app-entete>header>nav:nth-child(1) > span img{
+    max-width:50%;
   }
   app-entete>header>nav:nth-child(2) {
     flex: 1;
