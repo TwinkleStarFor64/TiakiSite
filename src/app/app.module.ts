@@ -21,6 +21,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { CandidaterValidComponent } from './pages/candidater-valid/candidater-valid.component';
+import { EnqueteComponent } from './pages/enquete/enquete.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CandidaterValidComponent } from './pages/candidater-valid/candidater-va
     NewsletterComponent,
     ErreurComponent,
     ContactComponent,
-    CandidaterValidComponent
+    CandidaterValidComponent,
+    EnqueteComponent
   ],
   imports: [
     BrowserModule,
