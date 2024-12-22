@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { EnteteComponent } from './structure/entete/entete.component';
-import { PiedComponent } from './structure/pied/pied.component';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { MentionsComponent } from './pages/mentions/mentions.component';
 import { CandidaterComponent } from './pages/candidater/candidater.component';
@@ -27,7 +26,6 @@ import { EnqueteComponent } from './pages/enquete/enquete.component';
   declarations: [
     AppComponent,
     EnteteComponent,
-    PiedComponent,
     AccueilComponent,
     MentionsComponent,
     CandidaterComponent,
