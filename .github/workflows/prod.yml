@@ -1,0 +1,27 @@
+on: 
+  push:
+    branches:
+      - prod
+name: 🚀 Build et déploiement sur la branch prod
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+      
+    - name: 🛠 Build Angular app
+      run: |
+        npm install -g @angular/cli
+        npm install
+        ng build
+      
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.cluster027.hosting.ovh.net
+        username: tiakiau
+        password: ${{ secrets.ftp_password }}        
+        local-dir: dist/tiaki-site/  # This is the local directory to upload
+        server-dir: /www/  # This is the remote directory on the server
