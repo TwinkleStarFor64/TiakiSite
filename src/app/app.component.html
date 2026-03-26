@@ -11,14 +11,18 @@
         écoutant leurs BESOINS/ en les formalisant et en construisant ENSEMBLE des SOLUTIONS INNOVANTES et EFFICACES
         alliant nouvelles technologies et Economie Sociale et Solidaire !</p>
     </blockquote>
-    <a href="https://www.helloasso.com/associations/twinkle-star-for-64" target="_blank" class="btn rougeorange"
-      title="Découvrir l'association"><img src="assets/images/logos/logo_helloasso.png" alt="Logo de Hello asso">En savoir plus sur Twinkle Star</a>
+    <a href="https://twinklestar64.org/" target="_blank" class="btn rougeorange" title="Découvrir l'association"><img
+        src="assets/images/logos/twinkle_etoile.png" alt="Logo de Hello asso">En savoir plus sur Twinkle Star</a>
   </section>
   <section>
     <router-outlet></router-outlet>
   </section>
 </main>
 <footer>
+  <div>
+    <img src="assets/images/logos/Logo_poctefa_transparent_web.png" alt="Logo du programme POCTEFA">
+      <p>Le projet T-IA-KI a été cofinancé à 65% par l'Union Européenne à travers le programme Interreg VI-A Espagne-France-Andorr (POCTEFA 2021-2027). L'objectif de POCTEFA est de renforcer l'intégration économique et sociale de la zone frontalière Espagne-France-Andorre.</p>
+  </div>
   <nav>
     <a *ngFor="let l of pages.menus.social" [href]="l.url" [title]="l.description" [target]="l.target">
       <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
@@ -27,22 +31,22 @@
   </nav>
   <nav>
     <ng-container *ngFor="let l of pages.menus.foot">
-    <!-- Si lien interne -->
-    <a [routerLink]="l.url" [title]="l.description" *ngIf="l.target != '_blank'">
-      <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
-      <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span>
-    </a>
-    <!-- Si lien externe -->
-    <a [href]="l.url" [title]="l.description" [target]="l.target" *ngIf="l.target == '_blank'">
-      <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
-      <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span>
-    </a>
-  </ng-container>
+      <!-- Si lien interne -->
+      <a [routerLink]="l.url" [title]="l.description" *ngIf="l.target != '_blank'">
+        <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
+        <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span>
+      </a>
+      <!-- Si lien externe -->
+      <a [href]="l.url" [title]="l.description" [target]="l.target" *ngIf="l.target == '_blank'">
+        <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
+        <span [ngClass]="{'hide':l.image && l.image.length > 0}">{{ l.title }}</span>
+      </a>
+    </ng-container>
   </nav>
   <nav>
-    <a *ngFor="let l of pages.partenaires" [href]="l.url" [title]="l.description" target="_blank">
-      <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
-      <span *ngIf="!l.image">{{ l.title }}</span>
-    </a>
+      <a *ngFor="let l of pages.partenaires" [href]="l.url" [title]="l.description" target="_blank">
+        <img [src]="l.image" [alt]="l.alt" *ngIf="l.image">
+        <span *ngIf="!l.image">{{ l.title }}</span>
+      </a>
   </nav>
 </footer>
